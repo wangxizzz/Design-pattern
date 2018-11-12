@@ -1,0 +1,22 @@
+如何实现灵活的奖金计算？假设奖金的计算体系如下：
+
+每个人当月业务奖金：当月销售额 * 3%
+每个人累计奖金：总的回款额 * 0.1%
+团队奖金：团队总销售额 * 1%
+奖金计算面临的问题：
+1. 计算逻辑复杂
+2. 要有灵活性，可以方便地增加或者减少功能
+3. 动态组合计算，不同的人参与的计算不同
+
+抽象出来的问题：如何才能透明地给一个对象增加功能，并实现功能的动态组合？
+
+装饰模式的定义：
+动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更为灵活。
+
+具体UML图参照 ：https://mp.weixin.qq.com/s/jnBYf5Fxno7itA-hpIXF_A
+
+Java中的装饰模式：IO流
+InputStream相当于Component
+FileInputStream，ObjectInputStream，StringBufferInputStream相当于ConcreteComponent
+FilterInputStream相当于Decorator
+DataInputStream，BufferedInputStream相当于ConcreteDecorator

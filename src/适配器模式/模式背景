@@ -1,0 +1,9 @@
+1.模式的定义：
+将一个类的接口转换成客户希望的另外一个接口。适配器模式使得原来由于接口不兼容而不能一起工作的那些类可以一起工作。
+
+适配器模式的分类：
+
+通过继承实现Adapter (继承Adaptee)—类适配器
+通过委让实现Adapter (包含Adaptee对象)—对象适配器
+
+具体UML图参照 ： https://mp.weixin.qq.com/s/wHf3S8l3MDnIMVcOQPUPIg
