@@ -10,7 +10,7 @@ public class Chinese implements Person{
 
     public String food;
 
-    Chinese(String food) {
+    public Chinese(String food) {
         this.food = food;
     }
 

@@ -9,7 +9,7 @@ public class ChineseFacade implements Person{
 
     private Chinese chinese;
 
-    ChineseFacade(Chinese chinese) {
+    public ChineseFacade(Chinese chinese) {
         this.chinese = chinese;
     }
 
