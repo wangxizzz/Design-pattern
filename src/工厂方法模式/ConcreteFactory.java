@@ -13,6 +13,7 @@ public class ConcreteFactory extends AbstractFactory{
 	public <T extends Product> T createProduct(Class<T> c) {
 		Product product = null;
 		try {
+			// 通过反射进行创建对象。
 			product = (Product) Class.forName(c.getName()).newInstance();
 		} catch (Exception e) {
 			// TODO: handle exception

@@ -9,7 +9,7 @@ package 工厂方法模式;
 public class Client {
 
 	public static void main(String[] args) {
-		ConcreteFactory concreteFactory = new ConcreteFactory();
+		AbstractFactory concreteFactory = new ConcreteFactory();
 		//通过工厂生产出产品1
 		ConcreteProduct1 concreteProduct1 = concreteFactory.createProduct(ConcreteProduct1.class);
 		concreteProduct1.method1();
