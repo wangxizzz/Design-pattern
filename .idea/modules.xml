@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/refactoring/refactoring.iml" filepath="$PROJECT_DIR$/refactoring/refactoring.iml" />
       <module fileurl="file://$PROJECT_DIR$/设计模式.iml" filepath="$PROJECT_DIR$/设计模式.iml" />
     </modules>
   </component>
