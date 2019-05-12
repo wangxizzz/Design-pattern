@@ -17,6 +17,7 @@ public class RefactorDemoService {
     // joda time 对日期的格式化    https://www.jianshu.com/p/cb4521194707
 
     final DateTime DISTRIBUTION_TIME_SPLIT_TIME = new DateTime().withTime(15,0,0,0);
+    // 返回值为Date,更具有通用性
     private Date calculateDistributionTimeByOrderCreateTime(Date orderCreateTime){
         DateTime orderCreateDateTime = new DateTime(orderCreateTime);
         Date tomorrow = orderCreateDateTime.plusDays(1).toDate();
