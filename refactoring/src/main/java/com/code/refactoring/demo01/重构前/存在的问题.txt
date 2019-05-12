@@ -1,0 +1,12 @@
+参考网址：
+https://www.javazhiyin.com/34182.html
+
+User user = new User();
+user.setUsername(userInputDTO.getUsername());
+user.setAge(userInputDTO.getAge());
+请使用工具
+
+上边的代码，从逻辑上讲，是没有问题的，只是这种写法让我很厌烦，例子中只有两个字段，如果有 20 个字段，我们要如何做呢？ 一个一个进行 set 数据吗？当然，如果你这么做了，肯定不会有什么问题，但是，这肯定不是一个最优的做法。
+
+网上有很多工具，支持浅拷贝或深拷贝的 Utils。
+举个例子，我们可以使用 org.springframework.beans.BeanUtils#copyProperties 对代码进行重构和优化
