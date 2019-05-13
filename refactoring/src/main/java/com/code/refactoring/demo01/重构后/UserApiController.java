@@ -4,9 +4,11 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.ObjectError;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
 /**
@@ -16,6 +18,7 @@ import javax.validation.constraints.NotBlank;
  */
 @RequestMapping("/v1/api/")
 @RestController
+@Validated
 public class UserApiController {
     @Autowired
     private UserService userService;
@@ -36,6 +39,14 @@ public class UserApiController {
         User user = userInputDTO.convertToUser();
         return userService.addUser(user);
     }
+
+    // 测试@RequestParam的参数validator
+    // 注意：在@RequestParam进行validator时是没有bindingResult.
+    @GetMapping("user1")
+    public String fun(@NotBlank(message = "username不能为空！") @RequestParam String username) {
+        return username;
+    }
+
 
     private boolean checkDTOParams(BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
