@@ -1,12 +1,13 @@
 package com.code.refactoring.effectivejava3.chapter3.item10.inheritance;
-import effectivejava.chapter3.item10.Point;
+import com.code.refactoring.effectivejava3.chapter3.item10.Point;
+import com.google.common.collect.Sets;
 
 import java.util.*;
 
 // Test program that uses CounterPoint as Point
 public class CounterPointTest {
     // Initialize unitCircle to contain all Points on the unit circle  (Page 43)
-    private static final Set<Point> unitCircle = Set.of(
+    private static final Set<Point> unitCircle = Sets.newHashSet(
             new Point( 1,  0), new Point( 0,  1),
             new Point(-1,  0), new Point( 0, -1));
 

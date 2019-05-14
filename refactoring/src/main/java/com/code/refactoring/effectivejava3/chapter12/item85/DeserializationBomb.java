@@ -1,5 +1,5 @@
 package com.code.refactoring.effectivejava3.chapter12.item85;
-import static effectivejava.chapter12.Util.*;
+import static com.code.refactoring.effectivejava3.chapter12.Util.*;
 
 import java.util.HashSet;
 import java.util.Set;

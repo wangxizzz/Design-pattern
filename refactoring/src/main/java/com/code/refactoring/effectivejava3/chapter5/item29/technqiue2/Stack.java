@@ -1,7 +1,7 @@
 package com.code.refactoring.effectivejava3.chapter5.item29.technqiue2;
 
 import java.util.Arrays;
-import effectivejava.chapter5.item29.EmptyStackException;
+import com.code.refactoring.effectivejava3.chapter5.item29.EmptyStackException;
 
 // Generic stack using Object[] (Pages 130-3)
 public class Stack<E> {

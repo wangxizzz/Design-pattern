@@ -1,7 +1,9 @@
 package com.code.refactoring.effectivejava3.chapter2.item2.hierarchicalbuilder;
 
-import static effectivejava.chapter2.item2.hierarchicalbuilder.Pizza.Topping.*;
-import static effectivejava.chapter2.item2.hierarchicalbuilder.NyPizza.Size.*;
+import static com.code.refactoring.effectivejava3.chapter2.item2.hierarchicalbuilder.NyPizza.Size.SMALL;
+import static com.code.refactoring.effectivejava3.chapter2.item2.hierarchicalbuilder.Pizza.Topping.HAM;
+import static com.code.refactoring.effectivejava3.chapter2.item2.hierarchicalbuilder.Pizza.Topping.ONION;
+import static com.code.refactoring.effectivejava3.chapter2.item2.hierarchicalbuilder.Pizza.Topping.SAUSAGE;
 
 // Using the hierarchical builder (Page 16)
 public class PizzaTest {

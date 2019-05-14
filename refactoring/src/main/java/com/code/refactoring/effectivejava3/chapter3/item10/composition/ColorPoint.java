@@ -1,7 +1,7 @@
 package com.code.refactoring.effectivejava3.chapter3.item10.composition;
 
-import effectivejava.chapter3.item10.Color;
-import effectivejava.chapter3.item10.Point;
+import com.code.refactoring.effectivejava3.chapter3.item10.Color;
+import com.code.refactoring.effectivejava3.chapter3.item10.Point;
 
 import java.util.Objects;
 

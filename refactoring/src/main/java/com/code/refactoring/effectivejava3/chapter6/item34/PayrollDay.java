@@ -2,7 +2,7 @@ package com.code.refactoring.effectivejava3.chapter6.item34;
 
 import static com.code.refactoring.effectivejava3.chapter6.item34.PayrollDay.PayType.WEEKDAY;
 import static com.code.refactoring.effectivejava3.chapter6.item34.PayrollDay.PayType.WEEKEND;
-import static effectivejava.chapter6.item34.PayrollDay.PayType.*;
+import static com.code.refactoring.effectivejava3.chapter6.item34.PayrollDay.PayType.*;
 
 // The strategy enum pattern (Page 166)
 enum PayrollDay {
