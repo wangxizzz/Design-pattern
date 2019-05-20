@@ -1,3 +1,0 @@
-package com.code.refactoring.effectivejava3.chapter3.item10;
-
-public enum Color { RED, ORANGE, YELLOW, GREEN, BLUE, INDIGO, VIOLET }
