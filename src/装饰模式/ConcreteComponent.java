@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * @Author:王喜
- * @Description :
+ * @Description : 具体的组件实现类
  * @Date: 2018/4/28 0028 15:56
  */
 public class ConcreteComponent extends AbstractComponent {

@@ -18,6 +18,9 @@ public class Client {
         AbstractDecorator d1 = new MonthPrizeDecorator(c1);
         AbstractDecorator d2 = new SumPrizeDecorator(d1);
 
+        // 写可以这么写
+        AbstractComponent component = new SumPrizeDecorator(new ConcreteComponent());
+
         //注意：这里只需要使用最后组合好的对象调用业务方法即可，会依次调用回去
         //日期对象都没有用上，所以传null就可以了
         double zs = d2.calcPrize("张三",null,null);

@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * @Author:王喜
- * @Description :装饰器对象，计算当月团队业务奖金
+ * @Description :装饰器对象，计算当月团队业务奖金(包装ConcreteComponent对象)
  * @Date: 2018/4/28 0028 16:13
  */
 public class GroupPrizeDecorator extends AbstractDecorator{
