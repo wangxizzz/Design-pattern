@@ -12,9 +12,9 @@ import java.util.concurrent.CountDownLatch;
 //使用Curator实现分布式锁功能
 public class Recipes_Lock {
 
-    static String lock_path = "/curator_recipes_lock_path";
+    static String lock_path = "/lock";
     static CuratorFramework client = CuratorFrameworkFactory.builder()
-            .connectString("10.110.25.197:2181,10.110.25.196:2181,10.110.25.198:2181")
+            .connectString("localhost:2181")
             .retryPolicy(new ExponentialBackoffRetry(1000, 3)).build();
 
     public static void main(String[] args) throws Exception {

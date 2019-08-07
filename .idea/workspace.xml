@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66dc2b0c-e372-4917-8ccf-e1ffe038f882" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_test_4_0_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoring/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/refactoring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/refactoring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Create_Node_Sample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Create_Session_Sample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Del_Data_Sample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Exist_Node_Sample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Get_Children_Sample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Get_Data_Sample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Set_Data_Sample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_NoLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_NoLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Create_Node_Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Create_Node_Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Get_Data_Sample.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Get_Data_Sample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_Lock.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_Lock.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,9 +56,9 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="58" />
+          <entry key="java" value="61" />
           <entry key="md" value="4" />
-          <entry key="xml" value="8" />
+          <entry key="xml" value="9" />
           <entry key="模式背景" value="1" />
           <entry key="背景介绍" value="2" />
         </counts>
@@ -74,25 +66,25 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="58" />
+          <entry key="JAVA" value="61" />
           <entry key="Markdown" value="4" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="XML" value="8" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1569" />
+          <entry key="java" value="1599" />
           <entry key="md" value="28" />
-          <entry key="txt" value="52" />
+          <entry key="txt" value="66" />
           <entry key="xml" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1569" />
+          <entry key="JAVA" value="1599" />
           <entry key="Markdown" value="28" />
-          <entry key="PLAIN_TEXT" value="52" />
+          <entry key="PLAIN_TEXT" value="66" />
           <entry key="XML" value="28" />
         </counts>
       </usages-collector>
@@ -162,41 +154,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refactoring/pom.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_Lock.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="95" selection-start-line="95" selection-end-line="95" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_NoLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+              <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/TestingServer_Sample.java">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Create_Node_Sample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="247">
+              <caret line="19" column="34" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Get_Data_Sample.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-608">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="228">
+              <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -241,9 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo01/重构后/BeanUtilTest.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo01/重构前/UserApiController.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo01/重构前/UserApiController1.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo01/重构前/存在的问题.txt" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo01/背景介绍" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo01/重构后/UserService.java" />
@@ -289,9 +266,12 @@
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/aop/README.md" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_3_1/ZooKeeper_Constructor_Usage_Simple.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/MasterSelect.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_Lock.java" />
         <option value="$PROJECT_DIR$/refactoring/pom.xml" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_NoLock.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Get_Data_Sample.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Create_Node_Sample.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_Lock.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/resources/logback.xml" />
       </list>
     </option>
   </component>
@@ -468,6 +448,14 @@
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
@@ -486,7 +474,7 @@
     <property name="SearchEverywhereHistoryKey" value="Exception&#9;PSI&#9;JAVA://java.lang.Exception&#10;AbstractProcessor &#9;PSI&#9;JAVA://javax.annotation.processing.AbstractProcessor&#10;Math&#9;PSI&#9;JAVA://java.lang.Math&#10;Integer&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Integer.java&#10;BigInteger&#9;PSI&#9;JAVA://java.math.BigInteger&#10;com.google.common.hash.hashing&#9;PSI&#9;JAVA://com.google.common.hash.Hashing&#10;String&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/String.java&#10;Arrays&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Arrays.java&#10;Objects&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Objects.java&#10;Boolean&#9;PSI&#9;JAVA://java.lang.Boolean&#10;Stringma&#9;PSI&#9;JAVA://org.apache.naming.StringManager&#10;Collection&#9;PSI&#9;JAVA://java.util.Collection&#10;Throwa&#9;PSI&#9;JAVA://java.lang.Throwable&#10;ServerSocketFactory&#9;PSI&#9;JAVA://javax.net.ServerSocketFactory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565180987257" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565182410995" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -516,7 +504,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Recipes_NoLock">
+  <component name="RunManager" selected="Application.Recipes_Lock">
+    <configuration name="Create_Node_Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.$5_4_2.Create_Node_Sample" />
+      <module name="refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.$5_4_2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PrintString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.interview.concurency.day01.PrintString" />
       <module name="interview" />
@@ -530,8 +531,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Recipes_NoLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.$5_4_2.Recipes_NoLock" />
+    <configuration name="Recipes_Lock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.$5_4_2.Recipes_Lock" />
       <module name="refactoring" />
       <extension name="coverage">
         <pattern>
@@ -543,12 +544,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Union" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.effectivejava3.chapter5.item30.Union" />
+    <configuration name="Recipes_NoLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.$5_4_2.Recipes_NoLock" />
       <module name="refactoring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.code.refactoring.effectivejava3.chapter5.item30.*" />
+          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.$5_4_2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -589,17 +590,19 @@
     <list>
       <item itemvalue="Spring Boot.RefactoringApplication" />
       <item itemvalue="Spring Boot.InterviewApplication" />
-      <item itemvalue="Application.Union" />
       <item itemvalue="Application.PrintString" />
       <item itemvalue="JUnit.Client.testMethodMonitor" />
       <item itemvalue="Application.Recipes_NoLock" />
+      <item itemvalue="Application.Create_Node_Sample" />
+      <item itemvalue="Application.Recipes_Lock" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Recipes_Lock" />
+        <item itemvalue="Application.Create_Node_Sample" />
         <item itemvalue="Application.Recipes_NoLock" />
         <item itemvalue="JUnit.Client.testMethodMonitor" />
         <item itemvalue="Application.PrintString" />
-        <item itemvalue="Application.Union" />
       </list>
     </recent_temporary>
   </component>
@@ -652,7 +655,7 @@
       <workItem from="1564841160096" duration="1378000" />
       <workItem from="1564904721313" duration="8527000" />
       <workItem from="1565160273461" duration="1296000" />
-      <workItem from="1565165409539" duration="5869000" />
+      <workItem from="1565165409539" duration="7296000" />
     </task>
     <task id="LOCAL-00001" summary="外观模式">
       <created>1554388284937</created>
@@ -815,7 +818,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565179993189</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="10个线程获取订单号">
+      <created>1565181045105</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1565181045105</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -851,13 +861,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112070000" />
+    <option name="totallyTimeSpent" value="113497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18910742" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28668684" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -867,7 +877,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.39078498" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.19453925" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45081967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -954,30 +964,10 @@
     <MESSAGE value="更改为jdk1.8" />
     <MESSAGE value="zk的代码" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="10个线程获取订单号" />
+    <option name="LAST_COMMIT_MESSAGE" value="10个线程获取订单号" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/装饰模式/SumPrizeDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="18" column="57" lean-forward="true" selection-start-line="18" selection-start-column="57" selection-end-line="18" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/装饰模式/ConcreteComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="26" lean-forward="true" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/装饰模式/GroupPrizeDecorator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/装饰模式/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -1229,27 +1219,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_Lock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" column="70" lean-forward="true" selection-start-line="15" selection-start-column="70" selection-end-line="15" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-608">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/TestingServer_Sample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1304,8 +1277,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_NoLock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
+        <state relative-caret-position="361">
+          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/TestingServer_Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Get_Data_Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="22" column="31" lean-forward="true" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Create_Node_Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="34" selection-start-line="19" selection-start-column="30" selection-end-line="19" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_2/Recipes_Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="31" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="31" />
         </state>
       </provider>
     </entry>
