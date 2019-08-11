@@ -19,9 +19,13 @@ public class ZooKeeper_Constructor_Usage_Simple implements Watcher {
         System.out.println(zookeeper.getState());
         try {
             connectedSemaphore.await();
-        } catch (InterruptedException e) {}
+        } catch (InterruptedException e) {
+
+        }
         System.out.println("ZooKeeper session established.");
     }
+
+    @Override
     public void process(WatchedEvent event) {
         System.out.println("Receive watched event：" + event);
         if (KeeperState.SyncConnected == event.getState()) {
