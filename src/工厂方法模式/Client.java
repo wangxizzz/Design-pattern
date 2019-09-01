@@ -11,7 +11,7 @@ public class Client {
 	public static void main(String[] args) {
 		AbstractFactory concreteFactory = new ConcreteFactory();
 		//通过工厂生产出产品1
-		ConcreteProduct1 concreteProduct1 = concreteFactory.createProduct(ConcreteProduct1.class);
+		Product concreteProduct1 = concreteFactory.createProduct(ConcreteProduct1.class);
 		concreteProduct1.method1();
 		//通过静态工厂生产出产品2
 		ConcreteProduct2 concreteProduct2 = StaticFactory.createProduct(ConcreteProduct2.class);
