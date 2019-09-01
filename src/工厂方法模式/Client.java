@@ -9,13 +9,16 @@ package 工厂方法模式;
 public class Client {
 
 	public static void main(String[] args) {
+		/**
+		 * 多态的体现
+		 */
 		AbstractFactory concreteFactory = new ConcreteFactory();
 		//通过工厂生产出产品1
-		Product concreteProduct1 = concreteFactory.createProduct(ConcreteProduct1.class);
-		concreteProduct1.method1();
+		Product product = concreteFactory.createProduct(ConcreteProduct1.class);
+		product.method1();
 		//通过静态工厂生产出产品2
-		ConcreteProduct2 concreteProduct2 = StaticFactory.createProduct(ConcreteProduct2.class);
-		concreteProduct2.method1();
+		product = StaticFactory.createProduct(ConcreteProduct2.class);
+		product.method1();
 	}
 
 }
