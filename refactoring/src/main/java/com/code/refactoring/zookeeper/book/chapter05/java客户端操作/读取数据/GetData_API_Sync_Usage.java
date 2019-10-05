@@ -35,7 +35,9 @@ public class GetData_API_Sync_Usage implements Watcher {
         if (KeeperState.SyncConnected == event.getState()) {
             if (EventType.None == event.getType() && null == event.getPath()) {
                 connectedSemaphore.countDown();
-            } else if (event.getType() == EventType.NodeDataChanged) {
+            }
+            // 数据内容或者数据版本的变化都会触发服务端的NodeDataChanged通知
+            else if (event.getType() == EventType.NodeDataChanged) {
                 try {
                     System.out.println(new String(zk.getData(event.getPath(), true, stat)));
                     System.out.println(stat.getCzxid() + "," +
