@@ -1,9 +1,11 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_5;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.更新数据;
 import org.apache.zookeeper.AsyncCallback;
+import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.Watcher.Event.EventType;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
+import org.apache.zookeeper.ZooDefs;
 import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.data.Stat;
 
@@ -23,7 +25,7 @@ public class SetData_API_ASync_Usage implements Watcher {
 				new SetData_API_ASync_Usage());
     	connectedSemaphore.await();
 
-    	//zk.create( path, "123".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL );
+    	zk.create( path, "123".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL );
     	zk.setData( path, "456".getBytes(), -1, new IStatCallback(), null );
     	
     	Thread.sleep( Integer.MAX_VALUE );
