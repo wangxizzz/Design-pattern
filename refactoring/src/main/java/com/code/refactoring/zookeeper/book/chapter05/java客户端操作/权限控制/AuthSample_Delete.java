@@ -1,10 +1,13 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_7;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.权限控制;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.ZooDefs.Ids;
 import org.apache.zookeeper.ZooKeeper;
 //删除节点的权限控制
 public class AuthSample_Delete {
-
+    /**
+     * 对于删除节点，当我们对节点增加权限控制时，那么还是可以随便删除该节点，
+     * 但是需要带权限删除该节点的子节点
+     */
     final static String PATH  = "/zk-book-auth_test";
     final static String PATH2 = "/zk-book-auth_test/child";
     public static void main(String[] args) throws Exception {
