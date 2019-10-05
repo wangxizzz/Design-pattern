@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66dc2b0c-e372-4917-8ccf-e1ffe038f882" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_1/ZooKeeper_Constructor_Usage_Simple.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建连接/ZooKeeper_Constructor_Usage_Simple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_1/ZooKeeper_Constructor_Usage_With_SID_PASSWD.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建连接/ZooKeeper_Constructor_Usage_With_SID_PASSWD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_2/ZooKeeper_Create_API_ASync_Usage.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建节点/ZooKeeper_Create_API_ASync_Usage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_2/ZooKeeper_Create_API_Sync_Usage.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建节点/ZooKeeper_Create_API_Sync_Usage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_4/GetData_API_ASync_Usage.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/GetData_API_ASync_Usage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_4/GetData_API_Sync_Usage.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/GetData_API_Sync_Usage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_4/ZooKeeper_GetChildren_API_ASync_Usage.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/ZooKeeper_GetChildren_API_ASync_Usage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_4/ZooKeeper_GetChildren_API_Sync_Usage.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/ZooKeeper_GetChildren_API_Sync_Usage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/删除节点/Delete_API_Sync_Usage.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/删除节点/Delete_API_Sync_Usage.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,95 +25,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/$5_4_2/Get_Data_Sample.java">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/GetData_API_ASync_Usage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="72">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建连接/ZooKeeper_Constructor_Usage_Simple.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="82">
-              <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建连接/ZooKeeper_Constructor_Usage_With_SID_PASSWD.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建节点/ZooKeeper_Create_API_ASync_Usage.java">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/GetData_API_Sync_Usage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            <state relative-caret-position="301">
+              <caret line="25" column="66" lean-forward="true" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14-sources.jar!/org/apache/zookeeper/AsyncCallback.java">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/ZooKeeper_GetChildren_API_Sync_Usage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="193" column="14" selection-start-line="193" selection-start-column="14" selection-end-line="193" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建节点/ZooKeeper_Create_API_Sync_Usage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="29" column="39" selection-start-line="29" selection-start-column="39" selection-end-line="29" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14-sources.jar!/org/apache/zookeeper/CreateMode.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="47" column="4" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14-sources.jar!/org/apache/zookeeper/ZooDefs.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Collections.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="4787" column="30" selection-start-line="4787" selection-start-column="30" selection-end-line="4787" selection-end-column="30" />
-              <folding>
-                <element signature="e#186747#186748#0" expanded="true" />
-                <element signature="e#186792#186793#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/$5_4_2/Recipes_DistAtomicInt.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="532">
+              <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -161,10 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo03/UserService03.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo03/背景介绍.md" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/effectivejava3/README.md" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/exception/JDK的自定义异常.md" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/effectivejava3/chapter2/item2/hierarchicalbuilder/PizzaTest.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/effectivejava3/chapter6/item39/repeatableannotation/RunTests.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/effectivejava3/chapter6/item39/annotationwithparameter/Sample2.java" />
@@ -212,6 +141,10 @@
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建连接/ZooKeeper_Constructor_Usage_With_SID_PASSWD.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建节点/ZooKeeper_Create_API_Sync_Usage.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建节点/ZooKeeper_Create_API_ASync_Usage.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/GetData_API_Sync_Usage.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/ZooKeeper_GetChildren_API_Sync_Usage.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/ZooKeeper_GetChildren_API_ASync_Usage.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/删除节点/Delete_API_Sync_Usage.java" />
       </list>
     </option>
   </component>
@@ -259,27 +192,159 @@
         <expanded-state>
           <State />
           <State>
+            <id>Abstraction issuesJava</id>
+          </State>
+          <State>
             <id>Android</id>
+          </State>
+          <State>
+            <id>Assignment issuesGroovy</id>
+          </State>
+          <State>
+            <id>Assignment issuesJava</id>
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
           </State>
           <State>
             <id>CorrectnessLintAndroid</id>
           </State>
           <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Error handlingJava</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJava</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>IconsUsabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>InitializationJava</id>
+          </State>
+          <State>
+            <id>J2ME issuesJava</id>
+          </State>
+          <State>
             <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
           </State>
           <State>
             <id>Java language level migration aidsJava</id>
           </State>
           <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
             <id>LintAndroid</id>
+          </State>
+          <State>
+            <id>MessagesCorrectnessLintAndroid</id>
+          </State>
+          <State>
+            <id>Naming conventionsJava</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>PerformanceJava</id>
           </State>
           <State>
             <id>PerformanceLintAndroid</id>
           </State>
+          <State>
+            <id>Plugin DevKit</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsGroovy</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Probable bugsKotlin</id>
+          </State>
+          <State>
+            <id>Reactor</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>SecurityJava</id>
+          </State>
+          <State>
+            <id>SecurityLintAndroid</id>
+          </State>
+          <State>
+            <id>Serialization issuesJava</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring DataSpring</id>
+          </State>
+          <State>
+            <id>UI Form</id>
+          </State>
+          <State>
+            <id>UsabilityLintAndroid</id>
+          </State>
+          <State>
+            <id>WebSocket</id>
+          </State>
+          <State>
+            <id>toString() issuesJava</id>
+          </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>Android</id>
+            <id>Duplicates</id>
           </State>
         </selected-state>
       </profile-state>
@@ -431,7 +496,7 @@
               <item name="book" type="462c0819:PsiDirectoryNode" />
               <item name="chapter05" type="462c0819:PsiDirectoryNode" />
               <item name="java客户端操作" type="462c0819:PsiDirectoryNode" />
-              <item name="创建节点" type="462c0819:PsiDirectoryNode" />
+              <item name="创建连接" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
@@ -445,8 +510,36 @@
               <item name="book" type="462c0819:PsiDirectoryNode" />
               <item name="chapter05" type="462c0819:PsiDirectoryNode" />
               <item name="java客户端操作" type="462c0819:PsiDirectoryNode" />
-              <item name="创建节点" type="462c0819:PsiDirectoryNode" />
-              <item name="ZooKeeper_Create_API_ASync_Usage.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="删除节点" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
+              <item name="book" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter05" type="462c0819:PsiDirectoryNode" />
+              <item name="java客户端操作" type="462c0819:PsiDirectoryNode" />
+              <item name="读取数据" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="zookeeper" type="462c0819:PsiDirectoryNode" />
+              <item name="book" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter05" type="462c0819:PsiDirectoryNode" />
+              <item name="java客户端操作" type="462c0819:PsiDirectoryNode" />
+              <item name="读取数据" type="462c0819:PsiDirectoryNode" />
+              <item name="GetData_API_ASync_Usage.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
@@ -528,7 +621,7 @@
     <property name="SearchEverywhereHistoryKey" value="Exception&#9;PSI&#9;JAVA://java.lang.Exception&#10;AbstractProcessor &#9;PSI&#9;JAVA://javax.annotation.processing.AbstractProcessor&#10;Math&#9;PSI&#9;JAVA://java.lang.Math&#10;Integer&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Integer.java&#10;BigInteger&#9;PSI&#9;JAVA://java.math.BigInteger&#10;com.google.common.hash.hashing&#9;PSI&#9;JAVA://com.google.common.hash.Hashing&#10;String&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/String.java&#10;Arrays&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Arrays.java&#10;Objects&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Objects.java&#10;Boolean&#9;PSI&#9;JAVA://java.lang.Boolean&#10;Stringma&#9;PSI&#9;JAVA://org.apache.naming.StringManager&#10;Collection&#9;PSI&#9;JAVA://java.util.Collection&#10;Throwa&#9;PSI&#9;JAVA://java.lang.Throwable&#10;ServerSocketFactory&#9;PSI&#9;JAVA://javax.net.ServerSocketFactory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570246922861" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570256917207" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -559,13 +652,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ZooKeeper_Create_API_ASync_Usage">
-    <configuration name="Get_Data_Sample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.curatoe操作.$5_4_2.Get_Data_Sample" />
+  <component name="RunManager" selected="Application.GetData_API_Sync_Usage">
+    <configuration name="Delete_API_Sync_Usage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.删除节点.Delete_API_Sync_Usage" />
       <module name="refactoring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.curatoe操作.$5_4_2.*" />
+          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.删除节点.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -573,25 +666,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZooKeeper_Constructor_Usage_Simple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建连接.ZooKeeper_Constructor_Usage_Simple" />
+    <configuration name="GetData_API_Sync_Usage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据.GetData_API_Sync_Usage" />
       <module name="refactoring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建连接.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ZooKeeper_Constructor_Usage_With_SID_PASSWD" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建连接.ZooKeeper_Constructor_Usage_With_SID_PASSWD" />
-      <module name="refactoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建连接.*" />
+          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -612,12 +692,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ZooKeeper_Create_API_Sync_Usage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建节点.ZooKeeper_Create_API_Sync_Usage" />
+    <configuration name="ZooKeeper_GetChildren_API_ASync_Usage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据.ZooKeeper_GetChildren_API_ASync_Usage" />
       <module name="refactoring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建节点.*" />
+          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ZooKeeper_GetChildren_API_Sync_Usage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据.ZooKeeper_GetChildren_API_Sync_Usage" />
+      <module name="refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -642,19 +735,19 @@
     <list>
       <item itemvalue="Spring Boot.RefactoringApplication" />
       <item itemvalue="Spring Boot.InterviewApplication" />
-      <item itemvalue="Application.ZooKeeper_Constructor_Usage_Simple" />
-      <item itemvalue="Application.Get_Data_Sample" />
-      <item itemvalue="Application.ZooKeeper_Constructor_Usage_With_SID_PASSWD" />
-      <item itemvalue="Application.ZooKeeper_Create_API_Sync_Usage" />
       <item itemvalue="Application.ZooKeeper_Create_API_ASync_Usage" />
+      <item itemvalue="Application.ZooKeeper_GetChildren_API_Sync_Usage" />
+      <item itemvalue="Application.ZooKeeper_GetChildren_API_ASync_Usage" />
+      <item itemvalue="Application.GetData_API_Sync_Usage" />
+      <item itemvalue="Application.Delete_API_Sync_Usage" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetData_API_Sync_Usage" />
+        <item itemvalue="Application.Delete_API_Sync_Usage" />
+        <item itemvalue="Application.ZooKeeper_GetChildren_API_ASync_Usage" />
+        <item itemvalue="Application.ZooKeeper_GetChildren_API_Sync_Usage" />
         <item itemvalue="Application.ZooKeeper_Create_API_ASync_Usage" />
-        <item itemvalue="Application.ZooKeeper_Create_API_Sync_Usage" />
-        <item itemvalue="Application.ZooKeeper_Constructor_Usage_With_SID_PASSWD" />
-        <item itemvalue="Application.ZooKeeper_Constructor_Usage_Simple" />
-        <item itemvalue="Application.Get_Data_Sample" />
       </list>
     </recent_temporary>
   </component>
@@ -718,7 +811,7 @@
       <workItem from="1569911040434" duration="1957000" />
       <workItem from="1570199622806" duration="779000" />
       <workItem from="1570201951885" duration="291000" />
-      <workItem from="1570244489018" duration="1912000" />
+      <workItem from="1570244489018" duration="5135000" />
     </task>
     <task id="LOCAL-00001" summary="外观模式">
       <created>1554388284937</created>
@@ -902,7 +995,14 @@
       <option name="project" value="LOCAL" />
       <updated>1567331494630</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="删除节点">
+      <created>1570247303546</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1570247303546</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -938,13 +1038,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130344000" />
+    <option name="totallyTimeSpent" value="133567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="694" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27786753" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22617124" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -954,12 +1054,12 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27740863" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32724252" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45081967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.41538462" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.4152824" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50075644" side_tool="true" weight="0.57475084" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49924356" weight="0.46837607" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
@@ -1012,7 +1112,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="外观模式" />
     <MESSAGE value="构造函数加上public关键字" />
     <MESSAGE value="修改工厂方法模式" />
     <MESSAGE value="JDK中工厂方法模式的应用" />
@@ -1037,37 +1136,10 @@
     <MESSAGE value="归档目录结构" />
     <MESSAGE value="merge" />
     <MESSAGE value="工厂模式" />
-    <option name="LAST_COMMIT_MESSAGE" value="工厂模式" />
+    <MESSAGE value="删除节点" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除节点" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter07/$7_1_4/Sample_AuthFailed1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/MasterSelect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/Session_Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/Sample_AuthFailed1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Create_Node_Sample.java" />
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Create_Session_Sample.java" />
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/$5_4_1/Del_Data_Sample.java" />
@@ -1114,19 +1186,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_4/ZooKeeper_GetChildren_API_ASync_Usage.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_4/GetData_API_ASync_Usage.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/$5_3_4/GetData_API_Sync_Usage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1258,20 +1317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14-sources.jar!/org/apache/zookeeper/Watcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建连接/ZooKeeper_Constructor_Usage_Simple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建连接/ZooKeeper_Constructor_Usage_With_SID_PASSWD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -1320,8 +1365,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建节点/ZooKeeper_Create_API_ASync_Usage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        <state relative-caret-position="519">
+          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14-sources.jar!/org/apache/zookeeper/ZooKeeper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="855" column="16" selection-start-line="855" selection-start-column="16" selection-end-line="855" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4203" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/创建连接/ZooKeeper_Constructor_Usage_Simple.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/zookeeper/zookeeper/3.4.14/zookeeper-3.4.14-sources.jar!/org/apache/zookeeper/Watcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/ZooKeeper_GetChildren_API_ASync_Usage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/GetData_API_ASync_Usage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/ZooKeeper_GetChildren_API_Sync_Usage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="48" column="56" selection-start-line="48" selection-start-column="56" selection-end-line="48" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/删除节点/Delete_API_Sync_Usage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/读取数据/GetData_API_Sync_Usage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="25" column="66" lean-forward="true" selection-start-line="25" selection-start-column="66" selection-end-line="25" selection-end-column="66" />
         </state>
       </provider>
     </entry>

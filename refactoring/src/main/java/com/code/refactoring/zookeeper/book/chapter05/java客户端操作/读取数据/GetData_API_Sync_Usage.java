@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_4;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.Watcher.Event.EventType;
@@ -23,7 +23,7 @@ public class GetData_API_Sync_Usage implements Watcher {
         connectedSemaphore.await();
         zk.create(path, "452353".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
         // 获取节点数据并且注册一个默认的监听(由类实现的监听process)
-        System.out.println(new String(zk.getData(path, true, stat)));
+        System.out.println(new String(zk.getData(path, true, stat)));  // 用旧的stat来接收新的znode数据
         System.out.println(stat.getCzxid() + "," + stat.getMzxid() + "," + stat.getVersion());
 
         zk.setData(path, "123".getBytes(), stat.getVersion());

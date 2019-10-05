@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_4;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据;
 import org.apache.zookeeper.AsyncCallback;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.WatchedEvent;
@@ -28,7 +28,10 @@ public class ZooKeeper_GetChildren_API_ASync_Usage implements Watcher {
                    Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);*/
         zk.create(path+"/c1", "".getBytes(), 
         		  Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
-        
+        /**
+         * 异步化获取子节点列表，异步化接口通常使用在，服务启动时，需要拉取大批的配置，
+         * 为了不阻塞主线程，异步。
+         */
         zk.getChildren(path, true, new IChildren2Callback(), null);
         
         zk.create(path+"/c2", "".getBytes(), 

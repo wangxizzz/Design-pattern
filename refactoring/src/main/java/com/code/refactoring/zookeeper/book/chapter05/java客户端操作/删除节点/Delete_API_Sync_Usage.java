@@ -17,13 +17,13 @@ public class Delete_API_Sync_Usage implements Watcher {
 
     public static void main(String[] args) throws Exception {
 
-    	String path = "/zk-book2";
+    	String path = "/zk-book";
     	zk = new ZooKeeper("localhost:2181",
 				5000, //
 				new Delete_API_Sync_Usage());
     	connectedSemaphore.await();
 
-    	zk.create( path, "".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL );
+    	//zk.create( path, "".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL );
     	// -1将会匹配任意版本节点
     	zk.delete( path, -1 );
     	

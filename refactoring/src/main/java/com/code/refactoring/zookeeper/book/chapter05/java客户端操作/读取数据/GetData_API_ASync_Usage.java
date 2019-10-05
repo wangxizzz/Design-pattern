@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_4;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.读取数据;
 import org.apache.zookeeper.AsyncCallback;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
