@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.$5_4_2;
+package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.基础操作.创建节点;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;

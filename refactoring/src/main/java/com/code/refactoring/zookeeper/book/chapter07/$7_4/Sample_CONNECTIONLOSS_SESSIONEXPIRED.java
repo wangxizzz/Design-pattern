@@ -21,7 +21,7 @@ public class Sample_CONNECTIONLOSS_SESSIONEXPIRED implements Watcher {
 
     public static void main(String[] args) throws Exception {
 
-        ZooKeeper zk = new ZooKeeper("domain1.book.zookeeper,domain2.book.zookeeper", 5000,
+        ZooKeeper zk = new ZooKeeper("localhost:2181,domain2.book.zookeeper", 5000,
                 new Sample_CONNECTIONLOSS_SESSIONEXPIRED());
         connectedSemaphore.await();
 

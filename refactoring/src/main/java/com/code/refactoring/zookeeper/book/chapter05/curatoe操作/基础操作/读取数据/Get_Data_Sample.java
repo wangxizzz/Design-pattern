@@ -1,12 +1,12 @@
-package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.$5_4_2;
+package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.基础操作.读取数据;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.data.Stat;
 
-//使用Curator更新数据内容
-public class Set_Data_Sample {
+//使用Curator获取数据内容
+public class Get_Data_Sample {
 
     static String path = "/zk-book";
     static CuratorFramework client = CuratorFrameworkFactory.builder()
@@ -16,19 +16,11 @@ public class Set_Data_Sample {
             .build();
     public static void main(String[] args) throws Exception {
         client.start();
-        client.delete().deletingChildrenIfNeeded().forPath( path );
         client.create()
               .creatingParentsIfNeeded()
               .withMode(CreateMode.EPHEMERAL)
               .forPath(path, "init".getBytes());
         Stat stat = new Stat();
-        client.getData().storingStatIn(stat).forPath(path);
-        System.out.println("Success set node for : " + path + ", new version: "
-                + client.setData().withVersion(stat.getVersion()).forPath(path).getVersion());
-        try {
-            client.setData().withVersion(stat.getVersion()).forPath(path);
-        } catch (Exception e) {
-            System.out.println("Fail set node due to " + e.getMessage());
-        }
+        System.out.println(new String(client.getData().storingStatIn(stat).forPath(path)));
     }
 }

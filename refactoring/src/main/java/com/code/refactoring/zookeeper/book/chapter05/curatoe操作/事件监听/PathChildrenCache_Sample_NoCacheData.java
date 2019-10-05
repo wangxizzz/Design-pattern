@@ -1,7 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.$5_4_2;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
+package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.事件监听;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.cache.PathChildrenCache;
@@ -11,31 +8,27 @@ import org.apache.curator.framework.recipes.cache.PathChildrenCacheListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 
-public class PathChildrenCache_Sample_ExecutorService {
+public class PathChildrenCache_Sample_NoCacheData {
 
     static String path = "/zk-book";
     static CuratorFramework client = CuratorFrameworkFactory.builder()
-            .connectString("domain1.book.zookeeper:2181")
+            .connectString("localhost:2181")
             .retryPolicy(new ExponentialBackoffRetry(1000, 3))
             .sessionTimeoutMs(5000)
             .build();
-    static ExecutorService tp = Executors.newFixedThreadPool(2);
-    
 	public static void main(String[] args) throws Exception {
 		client.start();
-		System.out.println( Thread.currentThread().getName() );
-		PathChildrenCache cache = new PathChildrenCache(client, path,true,false,tp);
-		cache.start(StartMode.NORMAL);
+		PathChildrenCache cache = new PathChildrenCache(client, path, true);
+		cache.start(StartMode.POST_INITIALIZED_EVENT);
 		cache.getListenable().addListener(new PathChildrenCacheListener() {
 			public void childEvent(CuratorFramework client, 
 					               PathChildrenCacheEvent event) throws Exception {
 				switch (event.getType()) {
 				case CHILD_ADDED:
-					System.out.println("CHILD_ADDED," + event.getData().getPath());
-					System.out.println( "tname: " + Thread.currentThread().getName() );
+					System.out.println("CHILD_ADDED," + event.getData().getData());
 					break;
 				case CHILD_UPDATED:
-					System.out.println("CHILD_UPDATED," + event.getData().getPath());
+					System.out.println("CHILD_UPDATED," + event.getData().getData());
 					break;
 				case CHILD_REMOVED:
 					System.out.println("CHILD_REMOVED," + event.getData().getPath());
@@ -45,7 +38,6 @@ public class PathChildrenCache_Sample_ExecutorService {
 				}
 			}
 		});
-		Thread.sleep( 1000 );
 		client.create().withMode(CreateMode.PERSISTENT).forPath(path);
 		Thread.sleep( 1000 );
 		client.create().withMode(CreateMode.PERSISTENT).forPath(path+"/c1");
@@ -56,5 +48,3 @@ public class PathChildrenCache_Sample_ExecutorService {
 		Thread.sleep(Integer.MAX_VALUE);
 	}
 }
-
-

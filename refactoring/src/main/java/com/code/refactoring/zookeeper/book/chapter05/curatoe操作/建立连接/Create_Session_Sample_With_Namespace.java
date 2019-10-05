@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.$5_4_2;
+package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.建立连接;
 import org.apache.curator.RetryPolicy;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
