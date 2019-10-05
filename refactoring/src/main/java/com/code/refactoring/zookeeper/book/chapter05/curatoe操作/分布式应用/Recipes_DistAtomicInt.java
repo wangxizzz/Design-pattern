@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.curatoe操作;
+package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.分布式应用;
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
 import org.apache.curator.framework.recipes.atomic.AtomicValue;
@@ -20,5 +20,6 @@ public class Recipes_DistAtomicInt {
 									new RetryNTimes( 3, 1000 ) );
 		AtomicValue<Integer> rc = atomicInteger.add( 8 );
 		System.out.println( "Result: " + rc.succeeded() );
+        System.out.println(rc.postValue());
 	}
 }

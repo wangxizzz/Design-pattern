@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.curatoe操作;
+package com.code.refactoring.zookeeper.book.chapter05.curatoe操作.分布式应用;
 
 import org.apache.curator.framework.CuratorFramework;
 import org.apache.curator.framework.CuratorFrameworkFactory;
@@ -33,12 +33,14 @@ public class Recipes_Lock {
                     String orderNo = sdf.format(new Date());
                     System.out.println("生成的订单号是 : " + orderNo);
                     try {
+                        // 释放锁
                         lock.release();
                     } catch (Exception e) {
                     }
                 }
             }).start();
         }
+        // 30个线程等主线程运行完毕
         down.countDown();
     }
 }
