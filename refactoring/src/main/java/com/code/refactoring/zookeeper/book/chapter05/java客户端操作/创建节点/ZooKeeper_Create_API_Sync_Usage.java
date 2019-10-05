@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_2;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建节点;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
@@ -19,8 +19,8 @@ public class ZooKeeper_Create_API_Sync_Usage implements Watcher {
 				new ZooKeeper_Create_API_Sync_Usage());
         connectedSemaphore.await();
         String path1 = zookeeper.create("/zk-test-ephemeral-", 
-        		"".getBytes(), 
-        		Ids.OPEN_ACL_UNSAFE, 
+        		"".getBytes(), // 自己实现序列化协议
+        		Ids.OPEN_ACL_UNSAFE,   // 权限控制，表示这个节点任务操作都不受权限限制，如果没有严格的权限控制，那么就设置为此
         		CreateMode.EPHEMERAL);
         System.out.println("Success create znode: " + path1);
 

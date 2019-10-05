@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_2;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建节点;
 
 import org.apache.zookeeper.AsyncCallback;
 import org.apache.zookeeper.CreateMode;
@@ -44,6 +44,14 @@ public class ZooKeeper_Create_API_ASync_Usage implements Watcher {
 }
 
 class IStringCallback implements AsyncCallback.StringCallback {
+    // 异步创建，create本身并不会抛异常，但是会在resultCode体现，也就是rc
+    /**
+     * resultCode如下：
+     *  0 响应成功
+     *  -4 客户端与服务端连接已断开
+     *  -110 节点已存在
+     *  -112 会话已过期
+     */
     @Override
     public void processResult(int rc, String path, Object ctx, String name) {
         System.out.println("Create path result: [" + rc + ", " + path + ", "

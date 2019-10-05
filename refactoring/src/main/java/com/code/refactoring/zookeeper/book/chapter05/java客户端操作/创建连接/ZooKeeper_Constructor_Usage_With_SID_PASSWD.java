@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_1;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.创建连接;
 
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
@@ -12,7 +12,7 @@ public class ZooKeeper_Constructor_Usage_With_SID_PASSWD implements Watcher {
     private static CountDownLatch connectedSemaphore = new CountDownLatch(1);
     public static void main(String[] args) throws Exception{
         ZooKeeper zookeeper = new ZooKeeper("localhost:2181",
-				5000, //
+				5000,
 				new ZooKeeper_Constructor_Usage_With_SID_PASSWD());
         connectedSemaphore.await();
         long sessionId = zookeeper.getSessionId();
@@ -20,9 +20,9 @@ public class ZooKeeper_Constructor_Usage_With_SID_PASSWD implements Watcher {
         
         //Use illegal sessionId and sessionPassWd
         zookeeper = new ZooKeeper("localhost:2181",
-				5000, //
+				5000,
 				new ZooKeeper_Constructor_Usage_With_SID_PASSWD(),//
-				1l,//
+				1l,
 				"test".getBytes());
         //Use correct sessionId and sessionPassWd
         zookeeper = new ZooKeeper("localhost:2181",
