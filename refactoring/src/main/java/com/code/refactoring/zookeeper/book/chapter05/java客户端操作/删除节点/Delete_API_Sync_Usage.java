@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.$5_3_3;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.删除节点;
 import org.apache.zookeeper.CreateMode;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
@@ -24,6 +24,7 @@ public class Delete_API_Sync_Usage implements Watcher {
     	connectedSemaphore.await();
 
     	zk.create( path, "".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL );
+    	// -1将会匹配任意版本节点
     	zk.delete( path, -1 );
     	
     	Thread.sleep( Integer.MAX_VALUE );
