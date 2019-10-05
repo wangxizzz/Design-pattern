@@ -7,13 +7,11 @@ import org.apache.zookeeper.ZooKeeper.States;
 
 /**
  * Description: ZooKeepre ACL权限控制 测试
- * 
- * @author nileader / nileader@gmail.com
- * @Date Feb 2, 2012
+ *
  */
 public class Session_Test implements Watcher{
 
-    final static String SERVER_LIST = "localhost:2182";
+    final static String SERVER_LIST = "localhost:2181";
 
     static ZooKeeper zookeeper = null;
 
