@@ -1,4 +1,4 @@
-package com.code.refactoring.zookeeper;
+package com.code.refactoring.zookeeper.book.chapter05.java客户端操作.分布式锁;
 
 import java.io.IOException;
 import java.util.concurrent.CountDownLatch;
@@ -13,7 +13,7 @@ import org.apache.zookeeper.ZooDefs.Ids;
 import org.apache.zookeeper.ZooKeeper;
 
 /**
- * ZooKeeper API 获取节点数据内容，使用异步(async)接口。
+ * ZooKeeper 使用Java客户端实现分布式锁
  * 
  * @author wangxi
  */
