@@ -38,7 +38,7 @@ public class NodeCache_Sample {
         });
         client.setData().forPath(path, "u".getBytes());
         Thread.sleep(1000);
-        client.delete().deletingChildrenIfNeeded().forPath(path);
+        //client.delete().deletingChildrenIfNeeded().forPath(path);
         Thread.sleep(Integer.MAX_VALUE);
     }
 }
