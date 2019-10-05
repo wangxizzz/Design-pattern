@@ -28,7 +28,7 @@ public class ZooKeeper_GetChildren_API_Sync_Usage implements Watcher {
                 Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
         zk.create(path + "/c1", "".getBytes(),
                 Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL);
-
+        // true表示是否复用zookeeper默认的watcher
         List<String> childrenList = zk.getChildren(path, true);
         // 输出孩子节点的相对路径
         System.out.println(childrenList);
