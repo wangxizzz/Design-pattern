@@ -2,7 +2,7 @@ package 单例模式4类实现方法;
 
 /**  
  * @ClassName: Singleton3  
- * @Description: DCL 双重加锁
+ * @Description: DCL 双检锁，线程安全
  * @author 王喜 
  * @date 2018年3月12日 下午8:27:13  
 */

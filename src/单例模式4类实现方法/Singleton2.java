@@ -2,7 +2,7 @@ package 单例模式4类实现方法;
 
 /**  
  * @ClassName: Singleton2  
- * @Description: 饱汉模式-变种1 -- 并发性差
+ * @Description: 饱汉模式-变种1 -- 并发性差，线程安全
  * @author 王喜 
  * @date 2018年3月12日 下午8:24:19  
 */

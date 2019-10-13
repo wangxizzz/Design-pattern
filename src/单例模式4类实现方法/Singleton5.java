@@ -9,8 +9,10 @@ package 单例模式4类实现方法;
 
 //饿汉模式线程安全，就是加载类后一直不使用，造成资源的浪费  多线程--使用饿汉模式性能更优
 public class Singleton5 {
-	//添加fianl关键字
-	private static final Singleton5 singleton5 = new Singleton5();
+	/**
+	 * 静态初始化器，本质由JVM来保证线程安全
+	 */
+	private static Singleton5 singleton5 = new Singleton5();
 	private Singleton5(){
 		
 	}
