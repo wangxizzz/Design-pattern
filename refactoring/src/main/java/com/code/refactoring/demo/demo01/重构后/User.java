@@ -1,4 +1,4 @@
-package com.code.refactoring.demo01.重构后;
+package com.code.refactoring.demo.demo01.重构后;
 
 import lombok.*;
 import lombok.experimental.Accessors;

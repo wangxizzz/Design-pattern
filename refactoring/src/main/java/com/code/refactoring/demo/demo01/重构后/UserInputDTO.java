@@ -1,4 +1,4 @@
-package com.code.refactoring.demo01.重构后;
+package com.code.refactoring.demo.demo01.重构后;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,6 @@ import org.springframework.beans.BeanUtils;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 /**
  * <Description>

@@ -1,6 +1,6 @@
 package com.code.refactoring;
 
-import com.code.refactoring.demo02.DemoService;
+import com.code.refactoring.demo.demo02.DemoService;
 import org.junit.Test;
 
 /**

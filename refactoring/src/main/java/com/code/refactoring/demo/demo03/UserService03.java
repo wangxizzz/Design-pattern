@@ -1,6 +1,6 @@
-package com.code.refactoring.demo03;
+package com.code.refactoring.demo.demo03;
 
-import com.code.refactoring.demo01.重构后.User;
+import com.code.refactoring.demo.demo01.重构后.User;
 
 import java.util.Arrays;
 import java.util.Collections;
