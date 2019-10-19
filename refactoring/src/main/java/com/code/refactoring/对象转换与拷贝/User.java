@@ -1,6 +1,8 @@
 package com.code.refactoring.对象转换与拷贝;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 /**
  * @Author wangxi
@@ -8,6 +10,8 @@ import lombok.Data;
  * 测试对象转化与拷贝的例子
  */
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private Integer id;
     private String username;
