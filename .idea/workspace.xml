@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="66dc2b0c-e372-4917-8ccf-e1ffe038f882" name="Default Changelist" comment="CopyTest1 test1 = new CopyTest1();&#10;        test1.outerName = &quot;hahaha&quot;;&#10;        CopyTest1.InnerClass innerClass = new CopyTest1.InnerClass();&#10;        innerClass.InnerName = &quot;hohoho&quot;;&#10;        test1.innerClass = innerClass;&#10;&#10;        System.out.println(test1.toString());&#10;        CopyTest2 test2 = new CopyTest2();&#10;        BeanUtils.copyProperties(test1, test2);&#10;&#10;        System.out.println(test2.toString());">
-      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/背景.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/ChildClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/FatherClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/Test01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest2.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest2.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,10 +27,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+            <state relative-caret-position="271">
+              <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="21" />
+            <state relative-caret-position="353">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,15 +50,56 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/Test01.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+            <state relative-caret-position="187">
+              <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding>
+                <element signature="e#727#728#0" expanded="true" />
+                <element signature="e#750#751#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar!/org/apache/commons/lang3/SerializationUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="81" column="52" lean-forward="true" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/FatherClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/ChildClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1659#1660#0" expanded="true" />
-                <element signature="e#1688#1689#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+            <state relative-caret-position="216">
+              <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,9 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/$5_4_2/Del_Data_Sample.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/删除节点/Del_Data_Sample.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/读取数据/Get_Data_Sample.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/更新数据/Set_Data_Sample.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/创建节点/Create_Node_Background_Sample.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/NodeCache_Sample.java" />
@@ -168,10 +208,13 @@
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/对象转换/MyBeanMapUtil.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CLient.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/背景.md" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/ChildClass.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/FatherClass.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest2.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/User.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/User.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/Test01.java" />
       </list>
     </option>
   </component>
@@ -428,27 +471,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
-              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -458,8 +480,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
               <item name="对象转换与拷贝" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -470,11 +490,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
               <item name="对象转换与拷贝" type="462c0819:PsiDirectoryNode" />
               <item name="spring对象拷贝" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="对象转换与拷贝" type="462c0819:PsiDirectoryNode" />
+              <item name="深度clone" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
@@ -515,6 +544,24 @@
               <item name="lang" type="462c0819:PsiDirectoryNode" />
               <item name="reflect" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.commons:commons-lang3:3.4" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.commons:commons-lang3:3.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-lang3-3.4.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.apache.commons:commons-lang3:3.4" type="70bed36:NamedLibraryElementNode" />
+              <item name="commons-lang3-3.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="lang3" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -531,7 +578,7 @@
     <property name="SearchEverywhereHistoryKey" value="Collection&#9;PSI&#9;JAVA://java.util.Collection&#10;Exception&#9;PSI&#9;JAVA://java.lang.Exception&#10;WatcherE&#9;PSI&#9;JAVA://org.apache.zookeeper.proto.WatcherEvent&#10;AbstractProcessor &#9;PSI&#9;JAVA://javax.annotation.processing.AbstractProcessor&#10;Math&#9;PSI&#9;JAVA://java.lang.Math&#10;Integer&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Integer.java&#10;BigInteger&#9;PSI&#9;JAVA://java.math.BigInteger&#10;com.google.common.hash.hashing&#9;PSI&#9;JAVA://com.google.common.hash.Hashing&#10;String&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/String.java&#10;Arrays&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Arrays.java&#10;Objects&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Objects.java&#10;Boolean&#9;PSI&#9;JAVA://java.lang.Boolean&#10;Stringma&#9;PSI&#9;JAVA://org.apache.naming.StringManager&#10;Throwa&#9;PSI&#9;JAVA://java.lang.Throwable&#10;ServerSocketFactory&#9;PSI&#9;JAVA://javax.net.ServerSocketFactory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571484426389" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571486511824" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -544,6 +591,7 @@
       <recent name="com.code.refactoring" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone" />
       <recent name="D:\projects\Design-pattern\refactoring\src\main\java\com\code\refactoring\zookeeper" />
       <recent name="D:\ideaprojects\Design-pattern\refactoring\src\main\java\com\code\refactoring" />
       <recent name="D:\ideaprojects\Design-pattern\refactoring\src\main\java\com\code\refactoring\demo01\重构后" />
@@ -562,7 +610,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Client">
+  <component name="RunManager" selected="Application.Test01">
     <configuration name="BeanMapUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.code.refactoring.对象转换与拷贝.对象转换.BeanMapUtil" />
       <module name="refactoring" />
@@ -615,12 +663,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSingleton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="单例模式4类实现方法.TestSingleton" />
-      <module name="设计模式" />
+    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.对象转换与拷贝.深度clone.Test01" />
+      <module name="refactoring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="单例模式4类实现方法.*" />
+          <option name="PATTERN" value="com.code.refactoring.对象转换与拷贝.深度clone.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -645,19 +693,19 @@
     <list>
       <item itemvalue="Spring Boot.RefactoringApplication" />
       <item itemvalue="Spring Boot.InterviewApplication" />
-      <item itemvalue="Application.TestSingleton" />
       <item itemvalue="Application.BeanMapUtil" />
       <item itemvalue="Application.MapToBean" />
       <item itemvalue="Application.MyBeanMapUtil" />
       <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Test01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test01" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.MyBeanMapUtil" />
         <item itemvalue="Application.BeanMapUtil" />
         <item itemvalue="Application.MapToBean" />
-        <item itemvalue="Application.TestSingleton" />
       </list>
     </recent_temporary>
   </component>
@@ -731,7 +779,7 @@
       <workItem from="1570550131494" duration="748000" />
       <workItem from="1570971286027" duration="2855000" />
       <workItem from="1571065061602" duration="3806000" />
-      <workItem from="1571239082908" duration="3260000" />
+      <workItem from="1571239082908" duration="5471000" />
     </task>
     <task id="LOCAL-00001" summary="外观模式">
       <created>1554388284937</created>
@@ -1028,13 +1076,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168628000" />
+    <option name="totallyTimeSpent" value="170839000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="690" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28836834" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28836834" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1044,8 +1092,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.25250837" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45081967" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4464883" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.2826087" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -1167,34 +1215,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="bean与Map相互转化" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/java客户端操作/删除节点/Delete_API_Sync_Usage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/Test01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="23" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/基础操作/创建节点/Create_Node_Background_Sample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="31" column="47" selection-start-line="31" selection-start-column="47" selection-end-line="31" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/建立连接/Create_Session_Sample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/建立连接/Create_Session_Sample_fluent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -1503,20 +1523,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest2.java">
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/ChildClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1525,8 +1535,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="216">
+          <caret line="14" column="7" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1535,13 +1565,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+        <state relative-caret-position="271">
+          <caret line="48" column="45" lean-forward="true" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1659#1660#0" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/FatherClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/Test01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="50" lean-forward="true" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding>
+            <element signature="e#727#728#0" expanded="true" />
+            <element signature="e#750#751#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4-sources.jar!/org/apache/commons/lang3/SerializationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="81" column="52" lean-forward="true" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
         </state>
       </provider>
     </entry>

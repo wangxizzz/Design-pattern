@@ -55,8 +55,9 @@ public class Client {
         System.out.println(test2.toString());
 
         System.out.println("======测试是否是深度clone========");
-        System.out.println(test1.getUser().hashCode());
-        System.out.println(test2.getUser().hashCode());
+        System.out.println(test1.getUser() == test2.getUser());
+        System.out.println(test1.getUser());
+        System.out.println(test2.getUser());
         System.out.println(test1.getUser().getUsername().hashCode());
         System.out.println(test2.getUser().getUsername().hashCode());
     }
