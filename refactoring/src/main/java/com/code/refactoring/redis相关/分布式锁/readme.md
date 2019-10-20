@@ -1,3 +1,7 @@
+**注意：redis实现的分布式锁，不可重入。也就是说相同lockValue(requestId)不能同时占用多次。**
+
+**基于zk的分布式锁可重入**
+
 参考网址：  
 
 https://mp.weixin.qq.com/s/iOtnIEPlEM1crBIgHXDZsg

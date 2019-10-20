@@ -6,7 +6,7 @@ import redis.clients.jedis.Jedis;
  * @Author wangxi
  * @Time 2019/10/20 23:27
  *
- * 错误的加锁与解锁方式
+ * 错误的加锁与解锁方式，会有并发的问题
  */
 public class ErrorLock {
     /**
