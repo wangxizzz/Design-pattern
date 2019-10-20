@@ -4,13 +4,16 @@
     <bookmark url="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/demo/demo01/重构前/存在的问题.txt" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66dc2b0c-e372-4917-8ccf-e1ffe038f882" name="Default Changelist" comment="CopyTest1 test1 = new CopyTest1();&#10;        test1.outerName = &quot;hahaha&quot;;&#10;        CopyTest1.InnerClass innerClass = new CopyTest1.InnerClass();&#10;        innerClass.InnerName = &quot;hohoho&quot;;&#10;        test1.innerClass = innerClass;&#10;&#10;        System.out.println(test1.toString());&#10;        CopyTest2 test2 = new CopyTest2();&#10;        BeanUtils.copyProperties(test1, test2);&#10;&#10;        System.out.println(test2.toString());">
-      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/对象clone总结.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/BeanCopierTest.java" afterDir="false" />
+    <list default="true" id="66dc2b0c-e372-4917-8ccf-e1ffe038f882" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/RedisBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtilTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/refactoring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/refactoring/refactoring.iml" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/refactoring.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/Test01.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/Test01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/DemoServiceTest.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -24,14 +27,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/对象clone总结.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="126">
-                <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtilTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,6 +70,7 @@
       <list>
         <option value="Interface" />
         <option value="AnnotationType" />
+        <option value="JUnit4 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -83,13 +111,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/NodeCache_Sample.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/事件监听/NodeCache_Node_Not_Exist_Sample.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/事件监听/PathChildrenCache_Sample_ExecutorService.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/事件监听/PathChildrenCache_Sample.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_MasterSelect.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_NoLock.java" />
-        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_DistAtomicInt.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/基础操作/读取数据/Get_Data_Sample.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_CyclicBarrier.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_Barrier2.java" />
@@ -130,10 +151,17 @@
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/CopyTest1.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/User.java" />
-        <option value="$PROJECT_DIR$/refactoring/pom.xml" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/Test01.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone/BeanCopierTest.java" />
         <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/对象clone总结.md" />
+        <option value="$PROJECT_DIR$/refactoring/pom.xml" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/Client.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisUtilTest.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisConfig.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/RedisBean.java" />
+        <option value="$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtilTest.java" />
       </list>
     </option>
   </component>
@@ -345,11 +373,13 @@
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <flattenPackages ProjectPane="false" />
-      <hideEmptyPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
       <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -400,7 +430,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="对象转换与拷贝" type="462c0819:PsiDirectoryNode" />
+              <item name="redis相关" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
@@ -410,72 +440,94 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="refactoring" type="462c0819:PsiDirectoryNode" />
-              <item name="对象转换与拷贝" type="462c0819:PsiDirectoryNode" />
-              <item name="深度clone" type="462c0819:PsiDirectoryNode" />
+              <item name="redis相关" type="462c0819:PsiDirectoryNode" />
+              <item name="restTemplate操作" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Design-pattern" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="lang" type="462c0819:PsiDirectoryNode" />
-              <item name="reflect" type="462c0819:PsiDirectoryNode" />
+              <item name="refactoring" type="462c0819:PsiDirectoryNode" />
+              <item name="restTemplate操作" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-lang3:3.4" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-lang3:3.4" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-lang3-3.4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.apache.commons:commons-lang3:3.4" type="70bed36:NamedLibraryElementNode" />
-              <item name="commons-lang3-3.4.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="lang3" type="462c0819:PsiDirectoryNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-autoconfigure-2.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-autoconfigure-2.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-autoconfigure-2.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Design-pattern" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.1.4.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-boot-autoconfigure-2.1.4.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="autoconfigure" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="redis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -483,10 +535,12 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="SearchEverywhereHistoryKey" value="Collection&#9;PSI&#9;JAVA://java.util.Collection&#10;Exception&#9;PSI&#9;JAVA://java.lang.Exception&#10;WatcherE&#9;PSI&#9;JAVA://org.apache.zookeeper.proto.WatcherEvent&#10;AbstractProcessor &#9;PSI&#9;JAVA://javax.annotation.processing.AbstractProcessor&#10;Math&#9;PSI&#9;JAVA://java.lang.Math&#10;Integer&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Integer.java&#10;BigInteger&#9;PSI&#9;JAVA://java.math.BigInteger&#10;com.google.common.hash.hashing&#9;PSI&#9;JAVA://com.google.common.hash.Hashing&#10;String&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/String.java&#10;Arrays&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Arrays.java&#10;Objects&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Objects.java&#10;Boolean&#9;PSI&#9;JAVA://java.lang.Boolean&#10;Stringma&#9;PSI&#9;JAVA://org.apache.naming.StringManager&#10;Throwa&#9;PSI&#9;JAVA://java.lang.Throwable&#10;ServerSocketFactory&#9;PSI&#9;JAVA://javax.net.ServerSocketFactory" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/wangxi/ideaProjects/Design-pattern/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtilTest.java&#10;Collection&#9;PSI&#9;JAVA://java.util.Collection&#10;Exception&#9;PSI&#9;JAVA://java.lang.Exception&#10;WatcherE&#9;PSI&#9;JAVA://org.apache.zookeeper.proto.WatcherEvent&#10;AbstractProcessor &#9;PSI&#9;JAVA://javax.annotation.processing.AbstractProcessor&#10;Math&#9;PSI&#9;JAVA://java.lang.Math&#10;Integer&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Integer.java&#10;BigInteger&#9;PSI&#9;JAVA://java.math.BigInteger&#10;com.google.common.hash.hashing&#9;PSI&#9;JAVA://com.google.common.hash.Hashing&#10;String&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/String.java&#10;Arrays&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Arrays.java&#10;Objects&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Objects.java&#10;Boolean&#9;PSI&#9;JAVA://java.lang.Boolean&#10;Stringma&#9;PSI&#9;JAVA://org.apache.naming.StringManager&#10;Throwa&#9;PSI&#9;JAVA://java.lang.Throwable&#10;ServerSocketFactory&#9;PSI&#9;JAVA://javax.net.ServerSocketFactory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571488624097" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1571549653609" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -495,8 +549,14 @@
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.code.refactoring.redis相关.restTemplate操作" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.code.refactoring" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/深度clone" />
@@ -518,26 +578,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.BeanCopierTest">
+  <component name="RunManager" selected="JUnit.RedisTemplateUtilTest.test01">
     <configuration name="BeanCopierTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.code.refactoring.对象转换与拷贝.深度clone.BeanCopierTest" />
       <module name="refactoring" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.code.refactoring.对象转换与拷贝.深度clone.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BeanMapUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.对象转换与拷贝.对象转换.BeanMapUtil" />
-      <module name="refactoring" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.code.refactoring.对象转换与拷贝.对象转换.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -584,6 +631,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RedisTemplateUtilTest.test01" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="refactoring" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.code.refactoring.redis相关.restTemplate操作.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.code.refactoring.redis相关.restTemplate操作" />
+      <option name="MAIN_CLASS_NAME" value="com.code.refactoring.redis相关.restTemplate操作.RedisTemplateUtilTest" />
+      <option name="METHOD_NAME" value="test01" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="InterviewApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="interview" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.interview.InterviewApplication" />
@@ -601,19 +664,19 @@
     <list>
       <item itemvalue="Spring Boot.RefactoringApplication" />
       <item itemvalue="Spring Boot.InterviewApplication" />
-      <item itemvalue="Application.BeanMapUtil" />
       <item itemvalue="Application.MyBeanMapUtil" />
       <item itemvalue="Application.Client" />
       <item itemvalue="Application.Test01" />
       <item itemvalue="Application.BeanCopierTest" />
+      <item itemvalue="JUnit.RedisTemplateUtilTest.test01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RedisTemplateUtilTest.test01" />
         <item itemvalue="Application.BeanCopierTest" />
         <item itemvalue="Application.Test01" />
         <item itemvalue="Application.Client" />
         <item itemvalue="Application.MyBeanMapUtil" />
-        <item itemvalue="Application.BeanMapUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -687,7 +750,9 @@
       <workItem from="1570550131494" duration="748000" />
       <workItem from="1570971286027" duration="2855000" />
       <workItem from="1571065061602" duration="3806000" />
-      <workItem from="1571239082908" duration="7256000" />
+      <workItem from="1571239082908" duration="8919000" />
+      <workItem from="1571538894895" duration="743000" />
+      <workItem from="1571544899837" duration="3864000" />
     </task>
     <task id="LOCAL-00001" summary="外观模式">
       <created>1554388284937</created>
@@ -948,22 +1013,17 @@
       <option name="project" value="LOCAL" />
       <updated>1571068843222</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="bean拷贝">
+      <created>1571488648390</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1571488648390</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DemoServiceTest - 2019.05.12 at 20h 51m 37s.xml">
-      <configuration name="DemoServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DemoServiceTest_test01 - 2019.05.12 at 20h 54m 08s.xml">
-      <configuration name="DemoServiceTest.test01" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DemoServiceTest_test01 - 2019.05.12 at 20h 55m 40s.xml">
-      <configuration name="DemoServiceTest.test01" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Client_testMethodMonitor - 2019.08.04 at 19h 24m 09s.xml">
-      <configuration name="Client.testMethodMonitor" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Client_testMethodMonitor - 2019.08.04 at 19h 25m 43s.xml">
       <configuration name="Client.testMethodMonitor" configurationId="JUnit" />
     </history-entry>
@@ -982,14 +1042,27 @@
     <history-entry file="Test01_test01 - 2019.10.13 at 21h 09m 16s.xml">
       <configuration name="Test01.test01" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RedisTemplateUtilTest_test01 - 2019.10.20 at 13h 23m 55s.xml">
+      <configuration name="RedisTemplateUtilTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisTemplateUtilTest_test01 - 2019.10.20 at 13h 29m 04s.xml">
+      <configuration name="RedisTemplateUtilTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisTemplateUtilTest_test01 - 2019.10.20 at 13h 31m 56s.xml">
+      <configuration name="RedisTemplateUtilTest.test01" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RedisTemplateUtilTest_test01 - 2019.10.20 at 13h 34m 45s.xml">
+      <configuration name="RedisTemplateUtilTest.test01" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="172624000" />
+    <option name="totallyTimeSpent" value="178894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="690" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28836834" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2463651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -999,7 +1072,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3110368" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3779264" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2826087" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1025,7 +1098,7 @@
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28836834" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2463651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1035,7 +1108,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3110368" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37959865" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2826087" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1094,7 +1167,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加入@RequestParam的参数验证" />
     <MESSAGE value="对查询返回空list的处理" />
     <MESSAGE value="add effective java 3" />
     <MESSAGE value="JDK的自定义异常class" />
@@ -1119,139 +1191,10 @@
     <MESSAGE value="重新认知单例模式的4种写法" />
     <MESSAGE value="目录调整" />
     <MESSAGE value="bean与Map相互转化" />
-    <option name="LAST_COMMIT_MESSAGE" value="bean与Map相互转化" />
+    <MESSAGE value="bean拷贝" />
+    <option name="LAST_COMMIT_MESSAGE" value="bean拷贝" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/监听器模式/用观察者模式重构/PhoneFans.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/监听器模式/用观察者模式重构/Buyer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/监听器模式/用观察者模式重构/HandChopper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/监听器模式/用观察者模式重构/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/监听器模式/用观察者模式重构/Shop.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="33" column="32" lean-forward="true" selection-start-line="33" selection-start-column="32" selection-end-line="33" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式/Singleton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式/ThreadSecurity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式/Emperor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式/MInister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="237" column="19" selection-start-line="237" selection-start-column="19" selection-end-line="237" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/io/ObjectOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="986" column="29" selection-start-line="986" selection-start-column="29" selection-end-line="986" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/util/concurrent/ConcurrentHashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-298">
-          <caret line="1027" column="45" selection-start-line="1027" selection-start-column="45" selection-end-line="1027" selection-end-column="45" />
-          <folding>
-            <element signature="e#44347#44348#0" expanded="true" />
-            <element signature="e#44395#44396#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式4类实现方法/Test01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式4类实现方法/Singleton1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式4类实现方法/Singleton5.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式4类实现方法/Singleton2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式4类实现方法/Singleton3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/单例模式4类实现方法/Singleton4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/单例模式4类实现方法/Singleton6.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="281">
@@ -1330,10 +1273,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="5460" column="44" selection-start-line="5460" selection-start-column="44" selection-end-line="5460" selection-end-column="44" />
-          <folding>
-            <element signature="e#210534#210535#0" expanded="true" />
-            <element signature="e#210578#210579#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1364,10 +1303,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="987">
           <caret line="383" column="18" selection-start-line="383" selection-start-column="18" selection-end-line="383" selection-end-column="18" />
-          <folding>
-            <element signature="e#5730#5731#0" expanded="true" />
-            <element signature="e#5762#5763#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1375,10 +1310,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="2992" column="25" selection-start-line="2992" selection-start-column="25" selection-end-line="2992" selection-end-column="25" />
-          <folding>
-            <element signature="e#117893#117894#0" expanded="true" />
-            <element signature="e#117955#117956#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1386,9 +1317,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="30" column="30" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1413,9 +1341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" selection-start-line="15" selection-end-line="16" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1433,9 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1443,9 +1365,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1463,20 +1382,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/refactoring/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/spring对象拷贝/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
           <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1491,24 +1400,164 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="19" column="46" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/对象转换与拷贝/对象clone总结.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
           <first_editor relative-caret-position="126">
             <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/事件监听/NodeCache_Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/事件监听/PathChildrenCache_Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-79">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/事件监听/NodeCache_Node_Not_Exist_Sample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_Barrier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="38" column="32" lean-forward="true" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_Barrier2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_CyclicBarrier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-133" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_DistAtomicInt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/zookeeper/book/chapter05/curatoe操作/分布式应用/Recipes_Lock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/DemoServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/BeanUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/RefactoringApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="32" lean-forward="true" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/RedisBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisAutoConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="26" column="19" lean-forward="true" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtilTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
