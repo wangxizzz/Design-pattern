@@ -2,7 +2,7 @@
 
 **基于zk的分布式锁可重入**
 
-参考网址：  
+参考网址1：  
 
 https://mp.weixin.qq.com/s/iOtnIEPlEM1crBIgHXDZsg
 
@@ -18,3 +18,8 @@ https://mp.weixin.qq.com/s/iOtnIEPlEM1crBIgHXDZsg
 
 
 解铃还须系铃人。加锁和解锁必须是同一个客户端，客户端自己不能把别人加的锁给解了。
+
+
+参考网址2：
+
+https://juejin.im/post/5b737b9b518825613d3894f4
