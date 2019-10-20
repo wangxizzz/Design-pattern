@@ -7,6 +7,8 @@ import redis.clients.jedis.Jedis;
  * @Time 2019/10/20 23:27
  *
  * 错误的加锁与解锁方式，会有并发的问题
+ * 为什么会有并发的问题？
+ * -- 因为锁的key,value存储在 共享缓存redis中。多个线程可以同时操作他们。
  */
 public class ErrorLock {
     /**
@@ -30,6 +32,14 @@ public class ErrorLock {
     /**
      * 最常见的解锁代码就是直接使用jedis.del()方法删除锁，
      * 这种不先判断锁的拥有者而直接解锁的方式，会导致任何客户端都可以随时进行解锁，即使这把锁不是它的。
+     * 场景如下：
+     * 这时又出现一个问题，问题出现的步骤如下
+     *
+     * 1、客户端A获取锁成功，过期时间30秒。
+     * 2、客户端A在某个操作上阻塞了50秒。
+     * 3、30秒时间到了，锁自动释放了。
+     * 4、客户端B获取到了对应同一个资源的锁。
+     * 5、客户端A从阻塞中恢复过来，释放掉了客户端B持有的锁。
      */
     public static void wrongReleaseLock1(Jedis jedis, String lockKey) {
         jedis.del(lockKey);
