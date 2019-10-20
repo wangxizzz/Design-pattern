@@ -1,6 +1,8 @@
 package com.code.refactoring.redis相关.restTemplate操作;
 
+import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.SetOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -24,6 +26,10 @@ public class RedisTemplateUtil {
 
     @Resource
     private StringRedisTemplate stringRedisTemplate;
+    @Resource
+    private HashOperations hashOperations;
+    @Resource
+    private SetOperations setOperations;
 
     // =============================common============================
     /**
@@ -326,7 +332,7 @@ public class RedisTemplateUtil {
      * @param values 值 可以是多个
      * @return 成功个数
      */
-    public long sSet(String key, Object... values) {
+    public long sAdd(String key, Object... values) {
         try {
             return redisTemplate.opsForSet().add(key, values);
         } catch (Exception e) {
@@ -342,7 +348,7 @@ public class RedisTemplateUtil {
      * @param values 值 可以是多个
      * @return 成功个数
      */
-    public long sSetAndTime(String key, long time, Object... values) {
+    public long sAddAndTime(String key, long time, Object... values) {
         try {
             Long count = redisTemplate.opsForSet().add(key, values);
             if (time > 0)
@@ -359,7 +365,7 @@ public class RedisTemplateUtil {
      * @param key 键
      * @return
      */
-    public long sGetSetSize(String key) {
+    public long sGetSize(String key) {
         try {
             return redisTemplate.opsForSet().size(key);
         } catch (Exception e) {
