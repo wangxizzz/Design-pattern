@@ -94,7 +94,8 @@ public class JedisPoolManagerTest {
         System.out.println("size:" + jedis.scard("name"));
         System.out.println("exists:" + jedis.sismember("name", "ricky"));
         System.out.println(String.format("all members: %s", jedis.smembers("name")));
-        System.out.println(String.format("rand member: %s", jedis.srandmember("name")));
+        // 随机获取
+        System.out.println(String.format("rand member: %s", jedis.srandmember("name", 2)));
         //remove
         jedis.srem("name", "demon");
     }
