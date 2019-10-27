@@ -97,6 +97,11 @@ public class RedisTemplateUtil {
         return key == null ? null : stringRedisTemplate.opsForValue().get(key);
     }
 
+
+    public Object getObject(String key) {
+        return key == null ? null : redisTemplate.opsForValue().get(key);
+    }
+
     /**
      * 普通缓存放入
      * @param key 键
@@ -106,6 +111,17 @@ public class RedisTemplateUtil {
     public boolean set(String key, String value) {
         try {
             stringRedisTemplate.opsForValue().set(key, value);
+            return true;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+
+    }
+
+    public boolean setObject(String key, Object value) {
+        try {
+            redisTemplate.opsForValue().set(key, value);
             return true;
         } catch (Exception e) {
             e.printStackTrace();

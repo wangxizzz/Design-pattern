@@ -26,6 +26,9 @@ public class RedisTemplateUtilTest {
     @Test
     public void test01() {
         RedisBean bean = new RedisBean("wangxiuqwe", 1);
+        redisTemplateUtil.setObject("object1", bean);
+        System.out.println(redisTemplateUtil.getObject("object1"));
+
         redisTemplateUtil.set("aabb", JsonUtil.toJson(bean));
         String val = redisTemplateUtil.get("aabb");
         System.out.println(val);
