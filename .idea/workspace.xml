@@ -7,9 +7,6 @@
   <component name="ChangeListManager">
     <list default="true" id="66dc2b0c-e372-4917-8ccf-e1ffe038f882" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/main/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtilTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -165,7 +162,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="690" />
+    <option name="height" value="689" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -516,7 +513,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/wangxi/ideaProjects/Design-pattern/refactoring/src/test/java/com/code/refactoring/redis相关/restTemplate操作/RedisTemplateUtilTest.java&#10;Collection&#9;PSI&#9;JAVA://java.util.Collection&#10;Exception&#9;PSI&#9;JAVA://java.lang.Exception&#10;WatcherE&#9;PSI&#9;JAVA://org.apache.zookeeper.proto.WatcherEvent&#10;AbstractProcessor &#9;PSI&#9;JAVA://javax.annotation.processing.AbstractProcessor&#10;Math&#9;PSI&#9;JAVA://java.lang.Math&#10;Integer&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/Integer.java&#10;BigInteger&#9;PSI&#9;JAVA://java.math.BigInteger&#10;com.google.common.hash.hashing&#9;PSI&#9;JAVA://com.google.common.hash.Hashing&#10;String&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/lang/String.java&#10;Arrays&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Arrays.java&#10;Objects&#9;FILE&#9;jar://C:/Program Files/Java/jdk-12.0.1/lib/src.zip!/java.base/java/util/Objects.java&#10;Boolean&#9;PSI&#9;JAVA://java.lang.Boolean&#10;Stringma&#9;PSI&#9;JAVA://org.apache.naming.StringManager&#10;Throwa&#9;PSI&#9;JAVA://java.lang.Throwable&#10;ServerSocketFactory&#9;PSI&#9;JAVA://javax.net.ServerSocketFactory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572186950914" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1572187153498" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -752,7 +749,7 @@
       <workItem from="1572016235735" duration="2183000" />
       <workItem from="1572019929464" duration="8000" />
       <workItem from="1572093947179" duration="769000" />
-      <workItem from="1572186009328" duration="1100000" />
+      <workItem from="1572186009328" duration="1165000" />
     </task>
     <task id="LOCAL-00001" summary="外观模式">
       <created>1554388284937</created>
@@ -1069,7 +1066,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572017791121</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="redisTemplate测试">
+      <created>1572187138342</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1572187138342</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1105,7 +1109,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202239000" />
+    <option name="totallyTimeSpent" value="202304000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="689" extended-state="6" />
@@ -1215,7 +1219,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="加zk与curator依赖" />
     <MESSAGE value="更改为jdk1.8" />
     <MESSAGE value="zk的代码" />
     <MESSAGE value="update" />
@@ -1240,7 +1243,8 @@
     <MESSAGE value="对于redis锁的思考" />
     <MESSAGE value="spring顺序注入List与无序Map" />
     <MESSAGE value="spring多态测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring多态测试" />
+    <MESSAGE value="redisTemplate测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="redisTemplate测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
