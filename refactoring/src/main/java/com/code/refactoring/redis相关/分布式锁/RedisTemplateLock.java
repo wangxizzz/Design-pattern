@@ -8,6 +8,7 @@ import org.springframework.data.redis.connection.ReturnType;
 import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.time.Duration;
@@ -18,6 +19,7 @@ import java.time.Duration;
  * 由redisTemplate实现的分布式锁
  */
 @Slf4j
+@Component
 public class RedisTemplateLock {
 
     @Resource
