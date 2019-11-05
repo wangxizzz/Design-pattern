@@ -1,4 +1,4 @@
-package com.code.refactoring.redis相关.restTemplate操作;
+package com.code.refactoring.redis相关.redisTemplate操作;
 
 import com.code.refactoring.common.JsonUtil;
 import com.code.refactoring.redis相关.RedisBean;
@@ -8,7 +8,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
-import java.util.concurrent.TimeUnit;
 
 
 /**

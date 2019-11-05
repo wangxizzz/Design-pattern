@@ -1,4 +1,4 @@
-package com.code.refactoring.redis相关.restTemplate操作;
+package com.code.refactoring.redis相关.redisTemplate操作;
 
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
