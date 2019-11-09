@@ -1,3 +1,27 @@
+
+
+**Spring Bean生命周期初始化顺序：https://www.cnblogs.com/piepie/p/9061076.html**
+
+步骤如下：
+步骤1、 豆子工厂（BeanFactory）从xml文件、java配置或注解配置中读取“各种豆子的生产方法说明（BeanDefinition）”。
+
+步骤2、 这些豆子分为“特殊豆子（实现spring指定的某些接口BeanFactoryPostProcessor）”和“普通豆子”，  豆子工厂先生产出这些特殊豆子。
+
+步骤3和4、 特殊豆子调用特定接口（例如BeanFactoryPostProcessor接口），可以对豆子工厂（BeanFactory）进行修改，或添加一些新豆子生产方法（即注册新的BeanDefinition到BeanFactory中）。
+
+步骤5、豆子工厂（BeanFactory）执行getBean方法生产其他的普通裸豆子。（调用类的构造方法，或FactoryBean的getObject方法，以及@Bean注解的方法）
+
+步骤6、设置豆子的依赖关系以及属性值。
+
+步骤7、调用豆子的@PostConstruct指定的方法
+
+步骤8、调用豆子的InitializingBean接口方法
+
+步骤9、调用豆子的initMethod指定的方法。
+
+**总结上述过程， 我们可以得到以下执行顺序 ：  BeanFactoryPostProcessor ---> 普通Bean构造方法 ---> 设置依赖或属性 ---> @PostConstruct ---> InitializingBean ---> initMethod 。**
+
+
 ## 简单比较init-method，afterPropertiesSet和BeanPostProcessor
 
 一、简单介绍

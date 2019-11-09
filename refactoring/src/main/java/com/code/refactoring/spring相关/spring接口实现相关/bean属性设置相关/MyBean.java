@@ -2,6 +2,7 @@ package com.code.refactoring.spring相关.spring接口实现相关.bean属性设
 
 import org.springframework.beans.factory.InitializingBean;
 
+import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 
 /**
@@ -30,17 +31,23 @@ public class MyBean implements InitializingBean {
      * init-method指定的方法可以是public、protected以及private的，并且方法也可以是final的。
      * init-method 消除了对Spring的依赖，但是执行此方法是利用反射进行的
      */
-    public void init() {
+    public void init01() {
         // 先填充MyBean的属性
         System.out.println(component01);
-        System.out.println("init() is called");
+        System.out.println("MyBean init01() is called");
+    }
+
+    @PostConstruct
+    public void init02() {
+        System.out.println(component01);
+        System.out.println("MyBean init02() is called");
     }
 
     /**
      * 销毁一个Bean对象之前进行垃圾回收
      */
     public void destroy() {
-        System.out.println("destroy() is called");
+        System.out.println("MyBean destroy() is called");
     }
 
     /**
@@ -48,6 +55,6 @@ public class MyBean implements InitializingBean {
      */
     @Override
     public void afterPropertiesSet() {
-        System.out.println("afterPropertiesSet is called");
+        System.out.println("MyBean afterPropertiesSet is called");
     }
 }

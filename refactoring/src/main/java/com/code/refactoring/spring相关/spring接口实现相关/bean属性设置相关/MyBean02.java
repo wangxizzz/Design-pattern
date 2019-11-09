@@ -1,14 +1,19 @@
 package com.code.refactoring.spring相关.spring接口实现相关.bean属性设置相关;
 
 
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
+
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 /**
  * @Author wangxi
  * @Time 2019/11/9 22:36
+ * 防止测试MYBean混淆结果，因此注释掉这个Bean
  */
-public class MyBean02 {
+//@Component
+public class MyBean02 implements InitializingBean {
 
     /**
      * 这种方式与bean在xml配置init-method、在@Bean(initMethod = "init") 方式一致
@@ -22,5 +27,10 @@ public class MyBean02 {
     @PreDestroy
     public void destroy() {
         System.out.println("jdk自带的注解 destroy() 调用");
+    }
+
+    @Override
+    public void afterPropertiesSet() {
+        System.out.println("afterPropertiesSet() is called");
     }
 }
