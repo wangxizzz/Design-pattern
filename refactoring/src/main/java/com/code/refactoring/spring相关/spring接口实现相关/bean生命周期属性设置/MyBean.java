@@ -13,7 +13,7 @@ import javax.annotation.Resource;
  * Spring总是先处理bean定义的InitializingBean，然后才处理init-method。
  * 如果在Spring处理InitializingBean时出错，那么Spring将直接抛出异常，不会再继续处理init-method。
  *
- * 如果一个bean被定义为非单例的，
+ * 如果一个bean被定义为非单例的，每创建一次就会被初始化一次
  * 那么afterPropertiesSet和init-method在bean的每一个实例被创建时都会执行。
  * 单例 bean的afterPropertiesSet和init-method只在bean第一次被实例时调用一次。
  * 大多数情况下 afterPropertiesSet和init-method都应用在单例的bean上。
