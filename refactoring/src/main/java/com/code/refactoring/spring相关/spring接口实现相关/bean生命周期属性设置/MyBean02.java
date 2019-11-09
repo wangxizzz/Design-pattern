@@ -15,8 +15,10 @@ import javax.annotation.PreDestroy;
 public class MyBean02 implements InitializingBean {
 
     /**
-     * 这种方式与bean在xml配置init-method、在@Bean(initMethod = "init") 方式一致
-     * 只不过这是用jdk自带的注解。类似于@Resource与@Autowire
+     * javaEE5引入了@PostConstruct和@PreDestroy两个作用于Servlet生命周期的注解，
+     * 实现Bean初始化之前和销毁之前的自定义操作
+     *
+     *  在项目中主要是在Servlet初始化之前加载一些缓存数据等
      */
     @PostConstruct
     public void init() {
