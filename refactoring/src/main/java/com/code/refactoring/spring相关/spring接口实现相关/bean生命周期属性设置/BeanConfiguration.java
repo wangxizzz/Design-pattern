@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class BeanConfiguration {
-
-    @Bean(initMethod = "init01", destroyMethod = "destroy")
+    //  为了防止与其他测试冲突，因此先注释掉这个Bean。因为Spring初始化容器为加载本工程所有的Bean
+    //@Bean(initMethod = "init01", destroyMethod = "destroy")
     public MyBean myBean() {
         return new MyBean();
     }
