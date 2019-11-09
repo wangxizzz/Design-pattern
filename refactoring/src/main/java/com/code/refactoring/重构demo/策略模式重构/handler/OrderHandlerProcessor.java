@@ -12,6 +12,7 @@ import java.util.Map;
 /**
  * @Author wangxi
  * @Time 2019/11/9 15:20
+ * 实现BeanFactoryPostProcessor，在spring处理bean前，将自定义的bean注册到容器中。
  */
 @Component
 public class OrderHandlerProcessor implements BeanFactoryPostProcessor {

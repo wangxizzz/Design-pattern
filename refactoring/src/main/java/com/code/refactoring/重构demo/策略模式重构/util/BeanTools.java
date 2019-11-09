@@ -9,6 +9,9 @@ import org.springframework.stereotype.Component;
 /**
  * @Author wangxi
  * @Time 2019/11/9 15:40
+ *
+ * Bean工具类
+ * 在非Spring管理的类中获取Spring注册的Bean
  */
 @Component
 public class BeanTools implements ApplicationContextAware {

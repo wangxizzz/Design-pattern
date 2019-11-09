@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 /**
  * @Author wangxi
  * @Time 2019/11/9 15:16
+ * 团购订单处理器
  */
 @Component
 @HandlerType("2")

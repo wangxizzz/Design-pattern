@@ -17,6 +17,11 @@ public class OrderServiceV2Impl implements OrderService {
     @Autowired
     private OrderHandlerContext orderHandlerContext;
 
+    /**
+     * 利用策略模式，具体的订单类型有看具体的策略来执行
+     * @param order 订单实体
+     * @return
+     */
     @Override
     public String handle(Order order) {
         String orderType = order.getType();

@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 /**
  * @Author wangxi
  * @Time 2019/11/9 15:11
+ * 定义订单处理器的类型
  */
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
