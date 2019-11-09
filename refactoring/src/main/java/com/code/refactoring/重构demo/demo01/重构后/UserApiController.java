@@ -1,4 +1,4 @@
-package com.code.refactoring.demo.demo01.重构后;
+package com.code.refactoring.重构demo.demo01.重构后;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.BindingResult;

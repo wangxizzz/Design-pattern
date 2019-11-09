@@ -1,4 +1,4 @@
-package com.code.refactoring.demo.exception;
+package com.code.refactoring.重构demo.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;

@@ -1,7 +1,7 @@
 package com.code.refactoring;
 
-import com.code.refactoring.demo.demo01.重构后.User;
-import com.code.refactoring.demo.demo01.重构后.UserInputDTO;
+import com.code.refactoring.重构demo.demo01.重构后.User;
+import com.code.refactoring.重构demo.demo01.重构后.UserInputDTO;
 import org.junit.Test;
 
 /**
