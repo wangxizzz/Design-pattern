@@ -1,8 +1,7 @@
-package com.code.refactoring.spring相关.spring接口实现相关.bean属性设置相关;
+package com.code.refactoring.spring相关.spring接口实现相关.bean生命周期属性设置;
 
 
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
