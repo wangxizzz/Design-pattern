@@ -1,10 +1,9 @@
-package com.code.refactoring.spring相关.beanFactoryPostProcessor接口相关;
+package com.code.refactoring.spring相关.spring接口实现相关.beanFactoryPostProcessor接口相关;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
-import org.springframework.stereotype.Component;
 
 
 /**

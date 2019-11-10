@@ -1,4 +1,4 @@
-package com.code.refactoring.spring相关.beanFactoryPostProcessor接口相关.bean;
+package com.code.refactoring.spring相关.spring接口实现相关.beanFactoryPostProcessor接口相关.bean;
 
 
 import lombok.AllArgsConstructor;

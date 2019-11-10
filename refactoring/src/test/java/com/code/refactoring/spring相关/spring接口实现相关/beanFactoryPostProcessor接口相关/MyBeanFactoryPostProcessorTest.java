@@ -1,6 +1,6 @@
-package com.code.refactoring.spring相关.beanFactoryPostProcessor接口相关;
+package com.code.refactoring.spring相关.spring接口实现相关.beanFactoryPostProcessor接口相关;
 
-import com.code.refactoring.spring相关.beanFactoryPostProcessor接口相关.bean.MyJavaBean;
+import com.code.refactoring.spring相关.spring接口实现相关.beanFactoryPostProcessor接口相关.bean.MyJavaBean;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
