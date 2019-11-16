@@ -20,6 +20,9 @@ public class ZooKeeper_Create_API_ASync_Usage implements Watcher {
         ZooKeeper zookeeper = new ZooKeeper("localhost:2181",
                 5000, //
                 new ZooKeeper_Create_API_ASync_Usage());
+        ZooKeeper zookeeper2 = new ZooKeeper("localhost:2181",
+                5000, //
+                new ZooKeeper_Create_API_ASync_Usage());
         connectedSemaphore.await();
 
         zookeeper.create("/zk-test-ephemeral-", "".getBytes(),
@@ -31,6 +34,10 @@ public class ZooKeeper_Create_API_ASync_Usage implements Watcher {
                 new IStringCallback(), "I am context.");
 
         zookeeper.create("/zk-test-ephemeral-", "".getBytes(),
+                Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL,
+                new IStringCallback(), "I am context.");
+
+        zookeeper2.create("/zk-test-ephemeral-", "".getBytes(),
                 Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL,
                 new IStringCallback(), "I am context.");
         Thread.sleep(Integer.MAX_VALUE);
