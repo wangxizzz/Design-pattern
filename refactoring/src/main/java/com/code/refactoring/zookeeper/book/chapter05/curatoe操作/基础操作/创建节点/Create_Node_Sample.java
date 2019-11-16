@@ -16,6 +16,7 @@ public class Create_Node_Sample {
         client.start();
         client.create()
               .creatingParentsIfNeeded()
+                .withProtection()   // 节点存在仍然可以创建成功
               .withMode(CreateMode.PERSISTENT)
               .forPath(path, "init".getBytes());
     }
