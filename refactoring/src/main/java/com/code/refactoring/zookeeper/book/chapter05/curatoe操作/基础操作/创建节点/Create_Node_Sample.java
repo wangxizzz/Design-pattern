@@ -6,7 +6,7 @@ import org.apache.zookeeper.CreateMode;
 
 //使用Curator创建节点
 public class Create_Node_Sample {
-    static String path = "/zk-book/c1";
+    static String path = "/zk-book";
     static CuratorFramework client = CuratorFrameworkFactory.builder()
             .connectString("localhost:2181")
             .sessionTimeoutMs(5000)

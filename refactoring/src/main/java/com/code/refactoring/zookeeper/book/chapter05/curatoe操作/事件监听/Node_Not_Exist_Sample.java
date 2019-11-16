@@ -7,7 +7,7 @@ import org.apache.curator.framework.recipes.cache.NodeCacheListener;
 import org.apache.curator.retry.ExponentialBackoffRetry;
 import org.apache.zookeeper.CreateMode;
 
-public class NodeCache_Node_Not_Exist_Sample {
+public class Node_Not_Exist_Sample {
 
     static String path = "/curator_nodecache_sample";
     static CuratorFramework client = CuratorFrameworkFactory.builder()
