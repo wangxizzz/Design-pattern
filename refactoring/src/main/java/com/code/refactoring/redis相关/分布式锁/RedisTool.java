@@ -17,11 +17,8 @@ public class RedisTool {
 
     /**
      * 尝试获取分布式锁
-     * @param jedis Redis客户端
-     * @param lockKey 锁
      * @param requestId 请求标识
-     * @param expireTime 超期时间
-     * @return 是否获取成功
+     * @param expireTime 超时时间(当系统崩溃或重启时，有作用。不仅仅是因为代码发生异常)
      * requestId一般可设置为 UUID.randomUUID().toString()+Thread.currentThread().getId()
      */
     public static boolean tryGetDistributedLock(Jedis jedis, String lockKey, String requestId, int expireTime) {
@@ -37,8 +34,6 @@ public class RedisTool {
 
     /**
      * 释放分布式锁
-     * @param jedis Redis客户端
-     * @param lockKey 锁
      * @param requestId 请求标识
      * @return 是否释放成功
      * 我们将Lua代码传到jedis.eval()方法里，并使参数KEYS[1]赋值为lockKey，ARGV[1]赋值为requestId。
