@@ -12,6 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @Time 2019/11/16 21:38
  * redisson的配置
  */
+
 @Configuration
 public class RedissonConfig {
     @Value("${spring.redis.host}")
@@ -23,7 +24,8 @@ public class RedissonConfig {
     @Value("${spring.redis.password}")
     private String password;
 
-    @Bean
+    //@Bean
+    // 为了保证系统启动不报错，因为redis不会每次单测都会启动。所以先注释掉
     public RedissonClient redissonClient(){
         Config config = new Config();
         // 如果没密码的话，就不要带上设置密码的方法了。
