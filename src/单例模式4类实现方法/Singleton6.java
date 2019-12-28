@@ -24,8 +24,9 @@ public class Singleton6 {
 	}
 	
 	private Singleton6(){}
-	
-	public static synchronized Singleton6 getInstance() {
+
+	// 这里不需要做任何的同步处理
+	public static Singleton6 getInstance() {
 		return Singleton6.SingletonHolder.SINGLETON6;
 	}
 
