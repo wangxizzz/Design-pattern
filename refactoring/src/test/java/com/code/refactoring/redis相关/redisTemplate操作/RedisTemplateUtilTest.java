@@ -24,10 +24,14 @@ public class RedisTemplateUtilTest {
     // 测试普通的存储、获取值
     @Test
     public void test01() {
+        /**
+         * 下面两种方式都可以把对象放入redis，但是推荐使用stringRedisTemplate，先格式化为json，然后再放到redis
+         */
         RedisBean bean = new RedisBean("wangxiuqwe", 1);
         redisTemplateUtil.setObject("object1", bean);
-        System.out.println(redisTemplateUtil.getObject("object1"));
+        System.out.println(((RedisBean)redisTemplateUtil.getObject("object1")).getAge());
 
+        // 把对象先格式化为String,然后利用stringRedisTemplate设置到redis
         redisTemplateUtil.set("aabb", JsonUtil.toJson(bean));
         String val = redisTemplateUtil.get("aabb");
         System.out.println(val);
