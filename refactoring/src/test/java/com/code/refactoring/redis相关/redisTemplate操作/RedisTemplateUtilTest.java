@@ -31,6 +31,10 @@ public class RedisTemplateUtilTest {
         redisTemplateUtil.setObject("object1", bean);
         System.out.println(((RedisBean)redisTemplateUtil.getObject("object1")).getAge());
 
+        // 需要配套使用，不能set利用redisTemplate，但是get使用stringRedisTemplate
+        redisTemplateUtil.setObject("aa", "aaa");
+        System.out.println(redisTemplateUtil.getObject("aa"));
+
         // 把对象先格式化为String,然后利用stringRedisTemplate设置到redis
         redisTemplateUtil.set("aabb", JsonUtil.toJson(bean));
         String val = redisTemplateUtil.get("aabb");
