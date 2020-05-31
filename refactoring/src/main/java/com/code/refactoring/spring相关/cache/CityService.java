@@ -25,13 +25,13 @@ public class CityService {
         map.put("纽约","美国");
     }
 
-    @Cacheable("getCountry")
+    @Cacheable(value = "cityCache", key = "#cityName")
     public String getCountry(String cityName) {
         System.out.println("=====getCountry");
         return map.get(cityName);
     }
 
-    @Cacheable("getProvince")
+    @Cacheable("provinceCache")
     public String getProvince(String cityName) {
         System.out.println("====getProvince");
         return map.get(cityName);
