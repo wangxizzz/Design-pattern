@@ -47,3 +47,8 @@ spring:
     cache-names: cityCache,provinceCache
     caffeine:
       spec: initialCapacity=10,maximumSize=200,expireAfterWrite=2s
+rocketmq:
+  name-server: 192.168.1.106:9876
+  producer:
+    group: my-group1
+    sendMessageTimeout: 3000

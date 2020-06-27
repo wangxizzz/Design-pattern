@@ -1,0 +1,1 @@
+https://github.com/apache/rocketmq/blob/master/docs/cn/RocketMQ_Example.md
