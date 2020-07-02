@@ -26,6 +26,7 @@ public class ConsumerInOrder {
          */
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
 
+        // 订阅topic为TopicTestOrdered，并且Tag为A或C或D的消息。Tag在生产消息指定
         consumer.subscribe("TopicTestOrdered", "TagA || TagC || TagD");
 
         consumer.registerMessageListener(new MessageListenerOrderly() {
