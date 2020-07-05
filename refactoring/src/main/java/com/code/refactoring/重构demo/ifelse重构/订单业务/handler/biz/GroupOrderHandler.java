@@ -1,8 +1,8 @@
-package com.code.refactoring.重构demo.策略模式重构.handler.biz;
+package com.code.refactoring.重构demo.ifelse重构.订单业务.handler.biz;
 
 import com.code.refactoring.重构demo.策略模式重构.handler.AbstractOrderHandler;
-import com.code.refactoring.重构demo.策略模式重构.handler.HandlerType;
 import com.code.refactoring.重构demo.策略模式重构.model.Order;
+import com.code.refactoring.重构demo.策略模式重构.model.OrderEnum;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,10 +11,14 @@ import org.springframework.stereotype.Component;
  * 团购订单处理器
  */
 @Component
-@HandlerType("2")
 public class GroupOrderHandler extends AbstractOrderHandler {
     @Override
     public String handleOrder(Order order) {
         return "处理团购订单";
+    }
+
+    @Override
+    public String getOrderType() {
+        return OrderEnum.GROUP_ORDER.getOrderType();
     }
 }

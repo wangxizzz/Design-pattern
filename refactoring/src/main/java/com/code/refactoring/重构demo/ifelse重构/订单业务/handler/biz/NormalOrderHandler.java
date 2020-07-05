@@ -1,8 +1,8 @@
-package com.code.refactoring.重构demo.策略模式重构.handler.biz;
+package com.code.refactoring.重构demo.ifelse重构.订单业务.handler.biz;
 
 import com.code.refactoring.重构demo.策略模式重构.handler.AbstractOrderHandler;
-import com.code.refactoring.重构demo.策略模式重构.handler.HandlerType;
 import com.code.refactoring.重构demo.策略模式重构.model.Order;
+import com.code.refactoring.重构demo.策略模式重构.model.OrderEnum;
 import org.springframework.stereotype.Component;
 
 /**
@@ -11,11 +11,15 @@ import org.springframework.stereotype.Component;
  * 普通订单handler
  */
 @Component
-@HandlerType("1")
 public class NormalOrderHandler extends AbstractOrderHandler {
     @Override
     public String handleOrder(Order order) {
         // 可以添加其他逻辑
         return "处理普通订单";
+    }
+
+    @Override
+    public String getOrderType() {
+        return OrderEnum.NORMAL_ORDER.getOrderType();
     }
 }

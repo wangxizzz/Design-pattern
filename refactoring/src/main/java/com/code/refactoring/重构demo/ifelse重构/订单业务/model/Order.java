@@ -1,4 +1,4 @@
-package com.code.refactoring.重构demo.策略模式重构.model;
+package com.code.refactoring.重构demo.ifelse重构.订单业务.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

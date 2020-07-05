@@ -1,6 +1,6 @@
-package com.code.refactoring.重构demo.策略模式重构.service.impl;
+package com.code.refactoring.重构demo.ifelse重构.订单业务.service.impl;
 
-import com.code.refactoring.重构demo.策略模式重构.handler.AbstractOrderHandler;
+import com.code.refactoring.重构demo.策略模式重构.handler.OrderHandler;
 import com.code.refactoring.重构demo.策略模式重构.handler.OrderHandlerContext;
 import com.code.refactoring.重构demo.策略模式重构.model.Order;
 import com.code.refactoring.重构demo.策略模式重构.service.OrderService;
@@ -25,7 +25,7 @@ public class OrderServiceV2Impl implements OrderService {
     @Override
     public String handle(Order order) {
         String orderType = order.getType();
-        AbstractOrderHandler handler = orderHandlerContext.getOrderHandlerInstance(orderType);
+        OrderHandler handler = orderHandlerContext.getOrderHandlerInstance(orderType);
 
         return handler.handleOrder(order);
     }

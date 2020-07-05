@@ -1,6 +1,5 @@
-package com.code.refactoring.重构demo.策略模式重构.handler;
+package com.code.refactoring.重构demo.ifelse重构.订单业务.handler;
 
-import com.code.refactoring.重构demo.策略模式重构.util.HandlerScanner;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
@@ -16,21 +15,20 @@ import java.util.Map;
  */
 @Component
 public class OrderHandlerProcessor implements BeanFactoryPostProcessor {
-    public static final String HANDLER_PACKAGE = "com.code.refactoring.重构demo.策略模式重构.handler.biz";
 
     /**
-     * 扫描@HandlerType，初始化HandlerContext，将其注册到spring容器
      *
      * @param beanFactory bean工厂
-     * @see HandlerType
      * @see OrderHandlerContext
      */
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-        Map<String, Class> orderHandlerMap = new HashMap<>(3);
-        HandlerScanner.scan(HANDLER_PACKAGE, HandlerType.class).forEach(clazz -> {
-            String orderType = clazz.getAnnotation(HandlerType.class).value();
-            orderHandlerMap.put(orderType, clazz);
+        // orderType -> OrderHandler
+        Map<String, OrderHandler> orderHandlerMap = new HashMap<>(3);
+        // beanName->OrderHandler
+        Map<String, OrderHandler> beansOfType = beanFactory.getBeansOfType(OrderHandler.class);
+        beansOfType.forEach((beanName, orderHandler) -> {
+            orderHandlerMap.put(orderHandler.getOrderType(), orderHandler);
         });
         OrderHandlerContext orderHandlerContext = new OrderHandlerContext(orderHandlerMap);
         // 把orderContext注册到Spring容器中
