@@ -1,7 +1,8 @@
 package com.code.refactoring.重构demo.策略模式重构.service.impl;
 
 import com.code.refactoring.BaseTest;
-import com.code.refactoring.重构demo.策略模式重构.model.Order;
+import com.code.refactoring.重构demo.ifelse重构.订单业务.model.Order;
+import com.code.refactoring.重构demo.ifelse重构.订单业务.service.impl.OrderServiceV2Impl;
 import org.junit.Test;
 
 import javax.annotation.Resource;

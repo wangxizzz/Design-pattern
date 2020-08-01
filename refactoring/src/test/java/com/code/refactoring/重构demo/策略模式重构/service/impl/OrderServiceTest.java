@@ -1,9 +1,9 @@
 package com.code.refactoring.重构demo.策略模式重构.service.impl;
 
 
-import com.code.refactoring.重构demo.策略模式重构.model.Order;
-import com.code.refactoring.重构demo.策略模式重构.model.OrderEnum;
-import com.code.refactoring.重构demo.策略模式重构.service.OrderService;
+import com.code.refactoring.重构demo.ifelse重构.订单业务.model.Order;
+import com.code.refactoring.重构demo.ifelse重构.订单业务.model.OrderEnum;
+import com.code.refactoring.重构demo.ifelse重构.订单业务.service.OrderService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
