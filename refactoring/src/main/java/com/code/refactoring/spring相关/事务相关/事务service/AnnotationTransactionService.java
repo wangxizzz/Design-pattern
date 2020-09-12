@@ -111,7 +111,7 @@ public class AnnotationTransactionService implements ApplicationContextAware {
     }
 
     @Transactional(rollbackFor = Exception.class)
-    public void fun02Transaction() {
+    public void fun02Transaction() {    // 必须要public
         // 先有书，再有订单
         DemoBookDO demoBookDO = toDemoBook();
         demoBookMapper.insert(demoBookDO);
