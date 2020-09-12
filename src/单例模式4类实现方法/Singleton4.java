@@ -2,7 +2,7 @@ package 单例模式4类实现方法;
 
 /**  
  * @ClassName: Singleton4  
- * @Description: 采用volatile关键字，线程安全
+ * @Description: DCL 双检锁，采用volatile关键字，线程安全
  * @author 王喜 
  * @date 2018年3月12日 下午8:29:37  
 */
