@@ -11,7 +11,7 @@ import java.util.Map;
  */
 public class ConditionalTest {
     AnnotationConfigApplicationContext applicationContext =
-            new AnnotationConfigApplicationContext(BeanConfig.class);
+            new AnnotationConfigApplicationContext(ConditionalBeanConfig.class);
 
     // 不加任何条件 两个Person实例被注入进容器
     @Test

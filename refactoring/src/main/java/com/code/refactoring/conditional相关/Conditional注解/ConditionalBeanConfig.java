@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  */
 // Conditional 可以设置在类上
 @Configuration
-public class BeanConfig {
+public class ConditionalBeanConfig {
 //    @Bean(name = "bill")
 //    public Person person1(){
 //        return new Person("Bill Gates",62);
