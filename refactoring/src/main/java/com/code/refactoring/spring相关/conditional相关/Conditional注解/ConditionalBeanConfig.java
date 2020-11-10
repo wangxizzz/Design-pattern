@@ -1,4 +1,4 @@
-package com.code.refactoring.conditional相关.Conditional注解;
+package com.code.refactoring.spring相关.conditional相关.Conditional注解;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Conditional;
