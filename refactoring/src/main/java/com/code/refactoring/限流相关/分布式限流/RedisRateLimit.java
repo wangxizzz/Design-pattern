@@ -1,13 +1,7 @@
 package com.code.refactoring.限流相关.分布式限流;
 
 import lombok.extern.slf4j.Slf4j;
-import org.redisson.api.RMapCache;
-import org.redisson.api.RedissonClient;
-import org.redisson.client.codec.IntegerCodec;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.util.concurrent.TimeUnit;
 
 /**
  * 利用redisson的限流
@@ -24,6 +18,7 @@ public class RedisRateLimit implements RateLimit {
     public boolean checkLimit(String key, int limitCount) throws RateLimitException {
 //        try {
 //            RMapCache<String, Integer> msgRateLimit = redissonClient.getMapCache(key, IntegerCodec.INSTANCE);
+//            // 固定限流，过了时间周期后会导致 流量重置。
 //            msgRateLimit.putIfAbsent(key, 0, 1L, TimeUnit.SECONDS);
 //            // 原子相加
 //            Integer count = msgRateLimit.addAndGet(key, 1);
