@@ -50,7 +50,7 @@ public class AnnotationTransactionService implements ApplicationContextAware {
         return "wangxi";
     }
 
-    @Transactional(rollbackFor = Exception.class)
+    @Transactional(rollbackFor = Exception.class)   // 事务会生效
     public void fun01() {
         // 先有书，再有订单
         DemoBookDO demoBookDO = toDemoBook();
@@ -110,8 +110,14 @@ public class AnnotationTransactionService implements ApplicationContextAware {
 
     }
 
+    /**
+     * 方法如果为private编译会报错，改为public时，事务仍然不会生效(嵌套事务的典型现象)
+     *
+     * 事务仍然不会生效的概念：
+     * book表会插入成功，然后抛出异常，order表插入失败。 代码的异常不会导致book表记录的回滚，会出现数据不一致的情况。
+     */
     @Transactional(rollbackFor = Exception.class)
-    public void fun02Transaction() {    // 必须要public
+    public void fun02Transaction() {
         // 先有书，再有订单
         DemoBookDO demoBookDO = toDemoBook();
         demoBookMapper.insert(demoBookDO);
