@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
+import java.io.IOException;
 
 
 /**
@@ -44,7 +45,24 @@ public class RedisTemplateUtilTest {
 
     // 测试 hash
     @Test
-    public void test02() {
+    public void test02() throws IOException {
+        //模拟多线程访问场景，这里应该每个链接都会对应一个socket 链接?
+        for (int i = 0; i < 200; i++) {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    while (true) {
+                        redisTemplateUtil.get("a" + System.currentTimeMillis());
 
+                        try {
+                            Thread.sleep(40000);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                }
+            }).start();
+        }
+        System.in.read();
     }
 }
