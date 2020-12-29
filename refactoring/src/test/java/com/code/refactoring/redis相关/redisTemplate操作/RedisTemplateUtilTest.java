@@ -2,13 +2,17 @@ package com.code.refactoring.redis相关.redisTemplate操作;
 
 import com.code.refactoring.common.JsonUtil;
 import com.code.refactoring.redis相关.RedisBean;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.util.Set;
 
 
 /**
@@ -17,10 +21,14 @@ import java.io.IOException;
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Slf4j
 public class RedisTemplateUtilTest {
 
     @Resource
     private RedisTemplateUtil redisTemplateUtil;
+
+    @Resource
+    private RedisTemplate<String, Object> redisTemplate;
 
     // 测试普通的存储、获取值
     @Test
@@ -64,5 +72,32 @@ public class RedisTemplateUtilTest {
             }).start();
         }
         System.in.read();
+    }
+
+    /**
+     * 延迟队列的实现
+     *
+     * @throws InterruptedException
+     */
+    @Test
+    public void testDelayQueue() throws InterruptedException {
+        ZSetOperations<String, Object> zSet = redisTemplate.opsForZSet();
+        zSet.add("delayQueue","aa", System.currentTimeMillis() + 10000L);
+        zSet.add("delayQueue","bb", System.currentTimeMillis() + 20000L);
+        zSet.add("delayQueue","cc", System.currentTimeMillis() + 30000L);
+        zSet.add("delayQueue","dd", System.currentTimeMillis() + 40000L);
+        System.out.println("======进入循环");
+        while (true) {
+            Set<ZSetOperations.TypedTuple<Object>> elements = zSet.rangeByScoreWithScores("delayQueue", 0, System.currentTimeMillis());
+
+            for (ZSetOperations.TypedTuple<Object> aa : elements) {
+                log.info("到期的元素 : {}", aa.getValue());
+                Long delayQueue = zSet.remove("delayQueue", aa.getValue());
+
+                System.out.println(delayQueue);
+            }
+
+            Thread.sleep(2000);
+        }
     }
 }
