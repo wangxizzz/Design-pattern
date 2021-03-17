@@ -49,6 +49,7 @@ public class RedisTemplateUtilTest {
         String val = redisTemplateUtil.get("aabb");
         System.out.println(val);
         System.out.println(JsonUtil.fromJson(val, RedisBean.class));
+
     }
 
     // 测试 hash

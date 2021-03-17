@@ -4,7 +4,6 @@ import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
 import org.redisson.config.Config;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
@@ -24,7 +23,7 @@ public class RedissonConfig {
     @Value("${spring.redis.password}")
     private String password;
 
-    @Bean
+   // @Bean
     // 为了保证系统启动不报错，因为redis不会每次单测都会启动。所以先注释掉
     public RedissonClient redissonClient(){
         Config config = new Config();
